@@ -172,7 +172,7 @@ body {
     position: fixed !important;
     top: 15px;
     left: 16px;
-    z-index: 9999991;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,7 +274,7 @@ input[id="active"]:checked ~ .hamburger .bottom_line {
   height: 100%;
   width: 100%;
   background-color: #202020;
-  z-index: 999999;
+  z-index: 2;
   text-align: center;
   
 }
