@@ -612,7 +612,7 @@ window.addEventListener("load", function () {
 
 <section id='portfolio' class="basic_screen_style" style="background-color:#E8E8E8;"> 
 
-  <div id="SHOW_APP01" class="job_offer_modal show_modal_from_above">
+  <div id="SHOW_APP01" class="job_offer_modal">
       
      
     <div class="job_offer_modal_details" >
@@ -621,7 +621,8 @@ window.addEventListener("load", function () {
       
     
       
-      <span onclick="document.getElementById('SHOW_APP01').style.display='none'" 
+      <span onclick="document.getElementById('SHOW_APP01').classList.remove('show_modal_from_above')" 
+       
       class="button_close_style">&times;
       </span>
 
@@ -637,7 +638,7 @@ window.addEventListener("load", function () {
   </div>  
 
  
-  <div id="SHOW_APP02" class="job_offer_modal show_modal_from_above">
+  <div id="SHOW_APP02" class="job_offer_modal">
       
      
     <div class="job_offer_modal_details" >
@@ -646,7 +647,7 @@ window.addEventListener("load", function () {
       
     
       
-      <span onclick="document.getElementById('SHOW_APP02').style.display='none'" 
+      <span onclick="document.getElementById('SHOW_APP02').classList.remove('show_modal_from_above')" 
       class="button_close_style">&times;
       </span>
 
@@ -661,7 +662,7 @@ window.addEventListener("load", function () {
   </div>  
   </div>  
 
-  <div id="SHOW_APP03" class="job_offer_modal show_modal_from_above">
+  <div id="SHOW_APP03" class="job_offer_modal">
     
    
     <div class="job_offer_modal_details" >
@@ -670,7 +671,7 @@ window.addEventListener("load", function () {
       
     
       
-      <span onclick="document.getElementById('SHOW_APP03').style.display='none'" 
+      <span onclick="document.getElementById('SHOW_APP03').classList.remove('show_modal_from_above')" 
       class="button_close_style">&times;
       </span>
 
@@ -748,8 +749,8 @@ window.addEventListener("load", function () {
   
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
-           onclick="document.getElementById('SHOW_APP01').style.display='block'">
-          
+           onclick="document.getElementById('SHOW_APP01').classList.add('show_modal_from_above')" >
+           
          
           <img src="img/312964.png"  alt="">
         
@@ -781,7 +782,7 @@ window.addEventListener("load", function () {
   
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
-           onclick="document.getElementById('SHOW_APP02').style.display='block'">
+          onclick="document.getElementById('SHOW_APP02').classList.add('show_modal_from_above')" >
           
          
           <img src="img/312964.png"  alt="">
@@ -815,7 +816,7 @@ window.addEventListener("load", function () {
 
       <div class="button_div_play">
         <button  style="border: none;background-color: transparent;"
-         onclick="document.getElementById('SHOW_APP03').style.display='block'">
+        onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above')" >
         
        
         <img src="img/312964.png"  alt="">
@@ -1098,6 +1099,8 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 
 <section id='blog' class="blog_img blog_image_1 basic_screen_style" style="background-color:#F5F5F5; "> 
 
+
+
   <div id="SHOW_BLOG001" class="job_offer_modal show_modal_from_above">
       
      
@@ -1123,6 +1126,9 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
    </div>
   </div>  
   </div> 
+
+
+
   <div class="program_page_title"> Blog
 
   </div>
@@ -1130,14 +1136,6 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
  
  
     <div class="con_programy">
- 
- 
- <a id="href1" hidden href="book/Astma_2024_ZALOZENIA.pdf" target="_blank" ></a>
- <a id="href2" hidden href="book/SCH_2024__BOOK__ZALOZENIA.pdf" target="_blank" >  </a>
- <a id="href3" hidden href="book/CHAD_2024__BOOK_ZALOZENIA.pdf" target="_blank" >  </a>
- 
- 
- 
  
    
  
@@ -1187,20 +1185,6 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 </section>
 
   
-<script>
-  
-
-collection = document.getElementsByClassName("job_offer_modal");
-setTimeout(
-    function() {
-for (let i = 0; i < collection.length; i++) {
-  
-  
-  collection[i].style.display = "none";
-}
-}, 1000);
-    
-</script>
 
 </body>
 </html>
