@@ -1101,7 +1101,7 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 
 
 
-  <div id="SHOW_BLOG001" class="job_offer_modal show_modal_from_above">
+  <div id="SHOW_BLOG001" class="job_offer_modal">
       
      
     <div class="job_offer_modal_details" >
@@ -1110,7 +1110,8 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
       
     
       
-      <span onclick="document.getElementById('SHOW_BLOG001').style.display='none'" 
+      <span onclick="document.getElementById('SHOW_BLOG001').classList.remove('show_modal_from_above')" 
+
       class="button_close_style">&times;
       </span>
 
@@ -1155,7 +1156,7 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
  
  
                 <div 
-                onclick="document.getElementById('SHOW_BLOG001').style.display='block'" 
+                onclick="document.getElementById('SHOW_BLOG001').classList.add('show_modal_from_above')" 
                 style="font-family: 'Courier New', Courier, monospace; width: 100%; font-size: 40px; position: absolute;margin-top: 5px; padding: 3px; text-align: center;">  
                  O czym 
                 
