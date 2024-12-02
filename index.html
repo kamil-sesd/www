@@ -163,7 +163,7 @@ background-size:100%;">
     padding: 40px;
     border: 22px dashed cadetblue;
     border-radius: 50%;
-    animation: move_loader 1.4s infinite;
+    animation: move_loader 1.9s infinite;
 ">
 
 </div>
@@ -613,12 +613,14 @@ setTimeout(
       
     
       
-      <span  onclick="document.getElementById('SHOW_APP01').classList.remove('show_modal_from_above');
+      <span  onclick="
+      document.getElementById('portfolio').classList.remove('hide');
            document.getElementById('home').classList.remove('hide');
            document.getElementById('about').classList.remove('hide');
            document.getElementById('offer').classList.remove('hide');
            document.getElementById('contact').classList.remove('hide');
            document.getElementById('blog').classList.remove('hide');
+           document.getElementById('SHOW_APP01').classList.remove('show_modal_from_above');
            document.getElementById('hidden_portfolio_click').click();
       
       
@@ -648,12 +650,14 @@ setTimeout(
       
     
       
-      <span onclick="document.getElementById('SHOW_APP02').classList.remove('show_modal_from_above');
-         document.getElementById('home').classList.remove('hide');
+      <span onclick="
+      document.getElementById('portfolio').classList.remove('hide');
+           document.getElementById('home').classList.remove('hide');
            document.getElementById('about').classList.remove('hide');
            document.getElementById('offer').classList.remove('hide');
            document.getElementById('contact').classList.remove('hide');
            document.getElementById('blog').classList.remove('hide');
+           document.getElementById('SHOW_APP02').classList.remove('show_modal_from_above');
            document.getElementById('hidden_portfolio_click').click();
       " 
       class="button_close_style">&times;
@@ -679,12 +683,14 @@ setTimeout(
       
     
       
-      <span onclick="document.getElementById('SHOW_APP03').classList.remove('show_modal_from_above');
+      <span onclick="
+           document.getElementById('portfolio').classList.remove('hide');
            document.getElementById('home').classList.remove('hide');
            document.getElementById('about').classList.remove('hide');
            document.getElementById('offer').classList.remove('hide');
            document.getElementById('contact').classList.remove('hide');
            document.getElementById('blog').classList.remove('hide');
+           document.getElementById('SHOW_APP03').classList.remove('show_modal_from_above');
            document.getElementById('hidden_portfolio_click').click();
 
       " 
@@ -766,6 +772,7 @@ setTimeout(
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
            onclick="document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
+           document.getElementById('home').classList.add('portfolio');
            document.getElementById('home').classList.add('hide');
            document.getElementById('about').classList.add('hide');
            document.getElementById('offer').classList.add('hide');
@@ -806,6 +813,7 @@ setTimeout(
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
           onclick="document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
+          document.getElementById('home').classList.add('portfolio');
             document.getElementById('home').classList.add('hide');
            document.getElementById('about').classList.add('hide');
            document.getElementById('offer').classList.add('hide');
@@ -848,6 +856,7 @@ setTimeout(
       <div class="button_div_play">
         <button  style="border: none;background-color: transparent;"
         onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above');
+        document.getElementById('home').classList.add('portfolio');
           document.getElementById('home').classList.add('hide');
            document.getElementById('about').classList.add('hide');
            document.getElementById('offer').classList.add('hide');
