@@ -32,7 +32,7 @@
 /* zmiany ikony home w menu */
 
 
- .hide {display:none}
+ .hide {display: none !important;}
 
  .change_img_home:hover img:first-child{
   display:none
@@ -1508,12 +1508,12 @@ margin-top: -37px;
 
 
   .job_offer_modal{
-    z-index:-1;
+    z-index:-9999999;
     display:block;
     /* padding-top:30px; */
     /* position:fixed; */
   
-    position: fixed;
+    position: absolute;
     left:0px;
     top:0px;
     width:100vw;
