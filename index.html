@@ -263,36 +263,14 @@ window.addEventListener("load", function () {
 
 
 
-    <!-- skrypt do pokazywania oferty - szczegółów jako collapsible div -->
-
-    <script>
-      var btn_c = document.getElementById("BUTTON_TO_COLL");
-      
-      var content_1 = document.getElementById("COLL_CONTENT");
-      
-   
-      btn_c.addEventListener("click", function() {
-          
-          this.classList.toggle("active");
-          
-          
-          if (content_1.style.maxHeight){
-            
-            content_1.style.maxHeight = null;
-          } else {
-            
-            content_1.style.maxHeight = content_1.scrollHeight + "px";
-          } 
-        });
-   
-      </script>
-
-
-
-
 <!-- --------------------------------------- -->
 <!-- EKRAN 0 - strona startowa -->
 <!-- --------------------------------------- -->
+
+<!-- <div style="background-color: white;height: 100vh;width: 100vw;position: fixed;">AAAAAAAAAA</div> -->
+
+<div style="z-index: 999;position: relative;display:none ;"  > <a id="hidden_portfolio_click" href="#portfolio">a</a></div>
+
 
 
 <section id='home' class="basic_screen_style" style="background-color:white;z-index: 0;"> 
@@ -610,6 +588,8 @@ window.addEventListener("load", function () {
 <!-- --------------------------------------- -->
 
 
+
+
 <section id='portfolio' class="basic_screen_style" style="background-color:#E8E8E8;"> 
 
   <div id="SHOW_APP01" class="job_offer_modal">
@@ -621,7 +601,16 @@ window.addEventListener("load", function () {
       
     
       
-      <span onclick="document.getElementById('SHOW_APP01').classList.remove('show_modal_from_above')" 
+      <span  onclick="document.getElementById('SHOW_APP01').classList.remove('show_modal_from_above');
+           document.getElementById('home').classList.remove('hide');
+           document.getElementById('about').classList.remove('hide');
+           document.getElementById('offer').classList.remove('hide');
+           document.getElementById('contact').classList.remove('hide');
+           document.getElementById('blog').classList.remove('hide');
+           document.getElementById('hidden_portfolio_click').click();
+      
+      
+      " 
        
       class="button_close_style">&times;
       </span>
@@ -647,7 +636,14 @@ window.addEventListener("load", function () {
       
     
       
-      <span onclick="document.getElementById('SHOW_APP02').classList.remove('show_modal_from_above')" 
+      <span onclick="document.getElementById('SHOW_APP02').classList.remove('show_modal_from_above');
+         document.getElementById('home').classList.remove('hide');
+           document.getElementById('about').classList.remove('hide');
+           document.getElementById('offer').classList.remove('hide');
+           document.getElementById('contact').classList.remove('hide');
+           document.getElementById('blog').classList.remove('hide');
+           document.getElementById('hidden_portfolio_click').click();
+      " 
       class="button_close_style">&times;
       </span>
 
@@ -671,7 +667,15 @@ window.addEventListener("load", function () {
       
     
       
-      <span onclick="document.getElementById('SHOW_APP03').classList.remove('show_modal_from_above')" 
+      <span onclick="document.getElementById('SHOW_APP03').classList.remove('show_modal_from_above');
+           document.getElementById('home').classList.remove('hide');
+           document.getElementById('about').classList.remove('hide');
+           document.getElementById('offer').classList.remove('hide');
+           document.getElementById('contact').classList.remove('hide');
+           document.getElementById('blog').classList.remove('hide');
+           document.getElementById('hidden_portfolio_click').click();
+
+      " 
       class="button_close_style">&times;
       </span>
 
@@ -749,7 +753,14 @@ window.addEventListener("load", function () {
   
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
-           onclick="document.getElementById('SHOW_APP01').classList.add('show_modal_from_above')" >
+           onclick="document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
+           document.getElementById('home').classList.add('hide');
+           document.getElementById('about').classList.add('hide');
+           document.getElementById('offer').classList.add('hide');
+           document.getElementById('contact').classList.add('hide');
+           document.getElementById('blog').classList.add('hide');
+           "
+           >
            
          
           <img src="img/312964.png"  alt="">
@@ -782,7 +793,15 @@ window.addEventListener("load", function () {
   
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
-          onclick="document.getElementById('SHOW_APP02').classList.add('show_modal_from_above')" >
+          onclick="document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
+            document.getElementById('home').classList.add('hide');
+           document.getElementById('about').classList.add('hide');
+           document.getElementById('offer').classList.add('hide');
+           document.getElementById('contact').classList.add('hide');
+           document.getElementById('blog').classList.add('hide');
+
+          
+          " >
           
          
           <img src="img/312964.png"  alt="">
@@ -816,7 +835,14 @@ window.addEventListener("load", function () {
 
       <div class="button_div_play">
         <button  style="border: none;background-color: transparent;"
-        onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above')" >
+        onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above');
+          document.getElementById('home').classList.add('hide');
+           document.getElementById('about').classList.add('hide');
+           document.getElementById('offer').classList.add('hide');
+           document.getElementById('contact').classList.add('hide');
+           document.getElementById('blog').classList.add('hide');
+   
+        " >
         
        
         <img src="img/312964.png"  alt="">
@@ -1100,35 +1126,32 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 <section id='blog' class="blog_img blog_image_1 basic_screen_style" style="background-color:#F5F5F5; "> 
 
 
-
   <div id="SHOW_BLOG001" class="job_offer_modal">
       
      
-    <div class="job_offer_modal_details" >
-    <div style="height: 100%;">
-      
-      
-    
-      
-      <span onclick="document.getElementById('SHOW_BLOG001').classList.remove('show_modal_from_above')" 
-
-      class="button_close_style">&times;
-      </span>
-
-      <div style="height:100%;width:100%;background-color: azure;justify-content: center;
-      align-items: center;display: flex;flex-wrap: wrap;
-      ">
-
-        <div style="font-size: 45px; text-align: center;">W budowie...</div>
-        
-      </div>
+  <div class="job_offer_modal_details" >
+  <div style="height: 100%;">
     
     
-   </div>
-  </div>  
-  </div> 
+  
+    
+    <span onclick="document.getElementById('SHOW_BLOG001').classList.remove('show_modal_from_above')" 
 
+    class="button_close_style">&times;
+    </span>
 
+    <div style="height:100%;width:100%;background-color: azure;justify-content: center;
+    align-items: center;display: flex;flex-wrap: wrap;
+    ">
+
+      <div style="font-size: 45px; text-align: center;">W budowie...</div>
+      
+    </div>
+  
+  
+ </div>
+</div>  
+</div> 
 
   <div class="program_page_title"> Blog
 
@@ -1185,7 +1208,7 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 
 </section>
 
-  
+
 
 </body>
 </html>
