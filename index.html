@@ -250,7 +250,7 @@ setTimeout(
 
 <div style="z-index: 999;position: relative;display:none ;"  > <a id="hidden_portfolio_click" href="#portfolio">a</a></div>
 
-
+<div style="z-index: 999;position: relative;display:none ;"  > <a id="close01_click" href="#close01">a</a></div>
 
 <section id='home' class="basic_screen_style" style="background-color:white;z-index: 0;"> 
 
@@ -595,7 +595,7 @@ setTimeout(
       
       " 
        
-      class="button_close_style">&times;
+      class="button_close_style" id="close01">&times;
       </span>
 
       <div style="height:100%;width:100vw;"> 
@@ -743,6 +743,7 @@ setTimeout(
            onclick="
            
            document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
+           document.getElementById('close01_click').click();
            
            document.getElementById('home').classList.add('hide');
            document.getElementById('about').classList.add('hide');
