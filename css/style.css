@@ -546,25 +546,46 @@ height: 400px;
 }
 
 
-@media only screen and (max-width: 700px) {
-  .con_main_text {
-    width: 88%;
 
-    font-size:2.8vh;
+@media only screen and (max-width: 500px) {
+  .con_main_text {
+    width: 83%;
+
+    font-size:20px;
     color: whitesmoke;
     text-align: left;
-    line-height: 3.1vh;
+    line-height: 1.4;
     
   }
   
   .con_main_text_haslo {
-    font-size: 7.6vh;
+    font-size: 60px;
+    line-height: 0.9;
     
   }
 }
 
 
+@media only screen and (max-width: 400px) {
+  .con_main_text {
+    width: 83%;
 
+    font-size:17px;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.2;
+    
+  }
+  
+  .con_main_text_haslo {
+    font-size: 55px;
+    line-height: 0.8;
+    
+  }
+}
+
+
+/* 
 
 @media only screen and (max-width: 1380px) {
   .con_main_text {
@@ -615,7 +636,7 @@ height: 400px;
 }
 
 
-
+ */
 
 
 
