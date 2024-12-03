@@ -546,6 +546,23 @@ height: 400px;
 }
 
 
+@media only screen and (max-width: 700px) {
+  .con_main_text {
+    width: 88%;
+
+    font-size:2.8vh;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 3.1vh;
+    
+  }
+  
+  .con_main_text_haslo {
+    font-size: 7.6vh;
+    
+  }
+}
+
 
 
 
@@ -597,25 +614,6 @@ height: 400px;
   }
 }
 
-
-@media only screen and (max-width: 700px) {
-  .con_main_text {
-    width: 88%;
-
-    font-size:2.8vh;
-    color: whitesmoke;
-    text-align: left;
-    line-height: 3.1vh;
-    
-  }
-
-
-  
-  .con_main_text_haslo {
-    font-size: 7.6vh;
-    
-  }
-}
 
 
 
