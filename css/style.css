@@ -547,6 +547,8 @@ height: 400px;
 
 
 
+
+
 @media only screen and (max-width: 1380px) {
   .con_main_text {
     width: 70%;
@@ -554,7 +556,7 @@ height: 400px;
   }
 
   .con_main_text_haslo {
-    font-size: 75px;
+    font-size: 11.6vh;
     
   }
 
@@ -562,7 +564,7 @@ height: 400px;
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .con_main_text {
     width: 80%;
     
@@ -571,7 +573,7 @@ height: 400px;
 
 
   .con_main_text_haslo {
-    font-size: 69px;
+    font-size: 10.6vh;
     
   }
 
@@ -579,144 +581,45 @@ height: 400px;
 }
 
 
-@media only screen and (max-width: 1100px) {
+
+@media only screen and (max-width: 800px) {
   .con_main_text {
-    width: 80%;
-    font-size: 28px;
+    width: 90%;
+    
     
   }
 
 
-  .con_main_text_haslo {
-    font-size: 65px;
-    
-  }
-
-
-}
-
-
-@media only screen and (max-width: 850px) {
-  .con_main_text {
-    width: 84%;
-    font-size: 28px;
-    
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 62px;
-    
-  }
-
-
-}
-
-
-
-
-@media only screen and (max-width: 750px) {
-  .con_main_text {
-    
-    font-size: 23px;
-    
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 60px;
-    
-  }
-
-
-}
-
-
-
-
-@media only screen and (max-width: 640px) {
-  .con_main_text {
-    
-    font-size: 21px;
-    
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 58px;
-    
-  }
-
-
-}
-
-
-
-
-@media only screen and (max-width: 640px) {
-  .con_main_text {
-    
-    font-size: 20px;
-    line-height: 2
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 58px;
-    
-  }
-
-
-}
-
-
-
-
-@media only screen and (max-width: 580px) {
-  .con_main_text {
-    
-    font-size: 20px;
-    line-height: 1.5
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 55px;
-    
-  }
-
-
-}
-
-@media only screen and (max-width: 530px) {
-  .con_main_text {
-    
-    font-size: 20px;
-    line-height: 1.3
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 68px;
-    line-height: 0.9;
-    
-  }
-
-
-}
-
-@media only screen and (max-width: 400px) {
   
-
-
   .con_main_text_haslo {
-    font-size: 60px;
-  
+    font-size: 9.6vh;
+    
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .con_main_text {
+    width: 88%;
+
+    font-size:2.8vh;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 3.1vh;
     
   }
 
 
+  
+  .con_main_text_haslo {
+    font-size: 7.6vh;
+    
+  }
 }
+
+
+
+
 
 
 .podpis{
