@@ -515,6 +515,7 @@ height: 400px;
 
 .con_main_text{
   display: block;
+  margin-top: 58px;
   /* justify-content:center;
   align-items: center;; */
   height: 100%;
@@ -539,29 +540,29 @@ height: 400px;
 .con_main_text_haslo{
   text-align: left;
   font-weight: 600;
-  font-size: 11vh;
+  
   color: whitesmoke;
-  margin-bottom: 5vh;
-  line-height: 5.4vh;
+  margin-bottom: 20px;
+  
 }
 
 
 
 @media only screen and (max-width: 500px) {
   .con_main_text {
-    width: 83%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 70px;
-    font-size:20px;
+    width: 88%;
+    margin-left: 8%;
+    margin-right: 4%;
+    
+    font-size:18px;
     color: whitesmoke;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.3;
     
   }
   
   .con_main_text_haslo {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 0.9;
     
   }
@@ -570,17 +571,19 @@ height: 400px;
 
 @media only screen and (max-width: 400px) {
   .con_main_text {
-    width: 83%;
+    width: 88%;
+    margin-left: 8%;
+    margin-right: 4%;
 
-    font-size:18px;
+    font-size:17px;
     color: whitesmoke;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.2;
     
   }
   
   .con_main_text_haslo {
-    font-size: 55px;
+    font-size: 50px;
     line-height: 0.8;
     
   }
