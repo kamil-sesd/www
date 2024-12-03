@@ -514,12 +514,12 @@ height: 400px;
 
 
 .con_main_text{
-  display: flex;
-  justify-content:center;
-  align-items: center;;
+  display: block;
+  /* justify-content:center;
+  align-items: center;; */
   height: 100%;
-  width: 60%;
-  margin: auto;
+  /* width: 60%; */
+  /* margin: auto; */
   font-family: 'Courier New', Courier, monospace;
   /* font-family: Calibri; */
   font-weight: 600;
@@ -550,7 +550,9 @@ height: 400px;
 @media only screen and (max-width: 500px) {
   .con_main_text {
     width: 83%;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
     font-size:20px;
     color: whitesmoke;
     text-align: left;
@@ -570,10 +572,10 @@ height: 400px;
   .con_main_text {
     width: 83%;
 
-    font-size:17px;
+    font-size:18px;
     color: whitesmoke;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.4;
     
   }
   
