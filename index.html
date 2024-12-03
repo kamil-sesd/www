@@ -582,7 +582,7 @@ setTimeout(
       
       <span  onclick="
               
-            document.getElementById('portfolio_div_form').classList.remove('hide');
+            document.getElementById('slider').classList.remove('hide');
            document.getElementById('home').classList.remove('hide');
            document.getElementById('about').classList.remove('hide');
            document.getElementById('offer').classList.remove('hide');
@@ -653,7 +653,7 @@ setTimeout(
     
       
       <span onclick="
-           
+           document.getElementById('portfolio_div_form').classList.remove('hide');
            document.getElementById('home').classList.remove('hide');
            document.getElementById('about').classList.remove('hide');
            document.getElementById('offer').classList.remove('hide');
@@ -718,7 +718,7 @@ setTimeout(
 
     <div class="slider-wrapper" >
   
-      <div class="slider" >
+      <div class="slider" id="slider" >
        
 
         <div class="slide"  id="slide-1" >
@@ -743,7 +743,7 @@ setTimeout(
            onclick="
            
            document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
-           
+           document.getElementById('slider').classList.add('hide');
            document.getElementById('home').classList.add('hide');
            document.getElementById('about').classList.add('hide');
            document.getElementById('offer').classList.add('hide');
