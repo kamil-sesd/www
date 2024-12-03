@@ -250,9 +250,6 @@ setTimeout(
 
 <div style="z-index: 999;position: relative;display:none ;"  > <a id="hidden_portfolio_click" href="#portfolio">a</a></div>
 
-<div style="z-index: 999;position: relative;display:none ;"  > <a id="close01_click" href="#SHOW_APP01_START">co to </a></div>
-<div style="z-index: 999;position: relative;display:none ;"  > <a id="close02_click" href="#SHOW_APP02_START">co to </a></div>
-<div style="z-index: 999;position: relative;display:none ;"  > <a id="close03_click" href="#SHOW_APP03_START">co to </a></div>
 
 <section id='home' class="basic_screen_style" style="background-color:white;z-index: 0;"> 
 
@@ -573,14 +570,13 @@ setTimeout(
 
 <section id='portfolio' class="basic_screen_style" style="background-color:#E8E8E8;"> 
 
-  <div id="SHOW_APP01" class="job_offer_modal">
+  
       
      
     <div class="job_offer_modal_details" >
       
     <div style="height: 100%;" >
       
-      <div id="SHOW_APP01_START">aaaaaaaaaaaaaaaaa</div>
     
       
       <span  onclick="
@@ -614,11 +610,11 @@ setTimeout(
   </div>  
 
  
-  <div id="SHOW_APP02" class="job_offer_modal">
+  <div  class="job_offer_modal">
       
      
     <div class="job_offer_modal_details" >
-    <div style="background-color: white;height: 100%;" id="SHOW_APP02_START">
+    <div style="background-color: white;height: 100%;">
       
       
     
@@ -649,11 +645,11 @@ setTimeout(
   </div>  
   </div>  
 
-  <div id="SHOW_APP03" class="job_offer_modal">
+  <div  class="job_offer_modal">
     
    
     <div class="job_offer_modal_details" >
-    <div style="background-color: white;height: 100%;" id="SHOW_APP03_START">
+    <div style="background-color: white;height: 100%;" >
       
       
     
@@ -751,7 +747,7 @@ setTimeout(
            onclick="
            
            document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
-          document.getElementById('close01_click').click();
+          
           document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
             document.getElementById('home').classList.add('hide');
@@ -794,7 +790,7 @@ setTimeout(
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
           onclick="document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
-          document.getElementById('close02_click').click();
+          
           document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
             document.getElementById('home').classList.add('hide');
@@ -840,7 +836,7 @@ setTimeout(
         <button  style="border: none;background-color: transparent;"
         onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above');
         
-        document.getElementById('close03_click').click();
+        
         document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
           document.getElementById('home').classList.add('hide');
