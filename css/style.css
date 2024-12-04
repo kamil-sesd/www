@@ -1650,7 +1650,7 @@ margin-top: -37px;
   .show_modal_from_above{
   /* position:relative; */
   z-index: 99;
-  animation:show_modal_from_above_effect 0.4s
+  /* animation:show_modal_from_above_effect 0.4s */
   }
   
   @keyframes show_modal_from_above_effect{
