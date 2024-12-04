@@ -607,10 +607,7 @@ setTimeout(
         style="height:100%;width:99vw; "
         ></iframe>
       </div>
-    <script>
-      loc='https://kamilsesd.shinyapps.io/WyzwaniaDemograficzne/'
-      document.getElementById('frame01').src = loc;
-    </script>
+    
     
    </div>
   </div>  
@@ -647,10 +644,9 @@ setTimeout(
         ></iframe>
       </div>
 
-      <script>
-        loc='https://kamilsesd.shinyapps.io/ElastycznoscCenowaAnkieta'
-        document.getElementById('frame02').src = loc;
-      </script>
+      
+        
+      
     
     
    </div>
@@ -690,10 +686,8 @@ setTimeout(
       </div>
 
       
-      <script>
-        loc='https://www.brass.com.pl'
-        document.getElementById('frame03').src = loc;
-      </script>
+       
+      
     
     
    </div>
@@ -765,6 +759,7 @@ setTimeout(
           <button  style="border: none;background-color: transparent;"
            onclick="
            
+           document.getElementById('frame01').src = 'https://kamilsesd.shinyapps.io/WyzwaniaDemograficzne/';
            document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
           document.getElementById('close01_click').click();
           document.getElementById('pomoc').classList.remove('hide');
@@ -808,7 +803,9 @@ setTimeout(
   
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
-          onclick="document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
+          onclick="
+          document.getElementById('frame02').src = 'https://kamilsesd.shinyapps.io/ElastycznoscCenowaAnkieta';
+          document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
           document.getElementById('close02_click').click();
           document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
@@ -854,7 +851,7 @@ setTimeout(
       <div class="button_div_play">
         <button  style="border: none;background-color: transparent;"
         onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above');
-        
+         document.getElementById('frame03').src = 'https://www.brass.com.pl';
         document.getElementById('close03_click').click();
         document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
