@@ -515,10 +515,10 @@ height: 400px;
 
 .con_main_text{
   display: block;
-  margin-top: 58px;
+  
   /* justify-content:center;
   align-items: center;; */
-  height: 100%;
+  
   /* width: 60%; */
   /* margin: auto; */
   font-family: 'Courier New', Courier, monospace;
@@ -530,7 +530,15 @@ height: 400px;
   color:#EBEBEB;
   
   text-align: left;
-  /* line-height: 5.1vh; */
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: auto;
+  height: 70vh; 
+  font-size: 28px;
+  
+  line-height: 1.3;
 }
 
 
@@ -542,8 +550,133 @@ height: 400px;
   font-weight: 600;
   
   color: whitesmoke;
-  margin-bottom: 20px;
   
+  font-size: 96px;
+  line-height: 0.8;
+  margin-bottom:15px ;
+}
+
+
+
+
+
+@media only screen and (max-width: 1380px) {
+  .con_main_text {
+    font-size: 23px;
+    margin-top: 85px;
+  }
+
+  .con_main_text_haslo {
+    font-size: 88px;
+    
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .con_main_text {
+    font-size: 25px;
+    margin-top: 65px;
+    width: 80%;
+    
+    
+  }
+
+
+  .con_main_text_haslo {
+    font-size: 88px;
+    
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 940px) {
+  .con_main_text {
+    font-size: 25px;
+    margin-top: 65px;
+    width: 80%;
+    
+    
+  }
+
+
+  .con_main_text_haslo {
+    font-size: 82px;
+    
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .con_main_text {
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 4%;
+
+    font-size:22px;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.4;
+    
+  }
+  
+  .con_main_text_haslo {
+    font-size: 60px;
+    line-height: 0.8;
+    
+  }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .con_main_text {
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 4%;
+
+    font-size:21px;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.4;
+    
+  }
+  
+  .con_main_text_haslo {
+    font-size: 55px;
+    line-height: 0.8;
+    
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .con_main_text {
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 4%;
+
+    font-size:19px;
+    color: whitesmoke;
+    text-align: left;
+    line-height: 1.4;
+    
+  }
+  
+  .con_main_text_haslo {
+    font-size: 55px;
+    line-height: 0.8;
+    
+  }
 }
 
 
@@ -590,58 +723,6 @@ height: 400px;
 }
 
 
-/* 
-
-@media only screen and (max-width: 1380px) {
-  .con_main_text {
-    width: 70%;
-    
-  }
-
-  .con_main_text_haslo {
-    font-size: 11.6vh;
-    
-  }
-
-
-}
-
-
-@media only screen and (max-width: 1000px) {
-  .con_main_text {
-    width: 80%;
-    
-    
-  }
-
-
-  .con_main_text_haslo {
-    font-size: 10.6vh;
-    
-  }
-
-
-}
-
-
-
-@media only screen and (max-width: 800px) {
-  .con_main_text {
-    width: 90%;
-    
-    
-  }
-
-
-  
-  .con_main_text_haslo {
-    font-size: 9.6vh;
-    
-  }
-}
-
-
- */
 
 
 
