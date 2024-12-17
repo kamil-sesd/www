@@ -2124,11 +2124,11 @@ animation:show_modal_opacity_effect 0.4s
   text-align: center;
   margin-left: 6%;
   margin-right: 6%;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 0px;
   border-radius: 30px;
   color: black;
-  font-size: 38px;  
+  font-size: 31px;  
 
   font-family: "minion-pro", serif;
   letter-spacing: 0px;
@@ -2137,6 +2137,29 @@ animation:show_modal_opacity_effect 0.4s
   
 }
 
+.program_page_subtitle{
+  position:relative;
+  z-index:0;
+  width: 88%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  
+  text-align: center;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 0px;
+  margin-top: 45px;
+  border-radius: 30px;
+  color: white;
+  font-size: 66px;  
+
+  font-family:'Courier New', Courier, monospace;
+  letter-spacing: 0px;
+  font-weight: 600;
+  
+  
+}
 
 
 
@@ -2315,9 +2338,112 @@ position: absolute;
       
       .blog_image_1{
         /* background-image: url("../img/pexels-icon0-479453.jpg"); */
-        background-image: url("../img/pexels-eva-bronzini-7967622.jpg");
+        /* background-image: url("../img/pexels-eva-bronzini-7967622.jpg"); */
+        background-image: url("../img/pexels-padrinan-1591056_2.jpg");
+        
       
       }
+
+
+      .blog_image_mod_1{
+        /* background-image: url("../img/pexels-icon0-479453.jpg"); */
+        /* background-image: url("../img/pexels-picjumbo-com-55570-196658.jpg"); */
+        /* background-image: url("../img/pexels-ozge-sultan-temur-137931573-27811270.jpg"); */
+        background-image: url("../img/pexels-bclarkphoto-21492.jpg ");
+        
+
+        width: 100%;
+        height: 100%;
+         /* border-radius: 2% 2% 0% 0% ; */
+         
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+      background-repeat: no-repeat;
+      
+      
+      /* border-style: solid;
+      border-color: #688E15; */
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+      
+      }
+
+
+      .blog_main_scr{
+      background-color:rgb(100, 100, 100, 0.5);
+      height: 100%;
+      width: 100%;
+      }
+
+      .blog_main_scr_all_text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto
+      }
+      
+
+
+
+      .blog_main_scr_all_text_1{
+        margin-top: 60px;
+        
+      
+      }
+
+
+      .blog_main_scr_all_text_title{
+         
+        background-color: #E8E8E8;
+        font-size: 45px;
+        padding: 5px;
+      }
+
+      .blog_main_scr_all_text_main{
+        padding: 10px; 
+        background-color: #E8E8E8;
+        font-size: 24px;
+        overflow-y:auto;
+        max-height: 80vh;
+        font-family:Calibri;
+        color: rgba(0,0,0,0.40);
+        
+        
+      }
+
+
+
+
+
+      @media only screen and (max-width: 600px) {
+ 
+
+
+        .blog_main_scr_all_text{
+          width: 89%;
+          
+        }
+        .blog_main_scr_all_text_main{
+         
+          font-size: 20px;
+          max-height: 70vh;
+          
+        }
+  
+        .blog_main_scr_all_text_title{
+          font-size: 35px;
+        }
+  
+
+      
+      }
+      
+
+
       /* nowe elementy chwilowo daję na górze */
 
 .kafelek{
