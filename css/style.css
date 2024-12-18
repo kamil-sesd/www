@@ -744,7 +744,7 @@ height: 400px;
   z-index:-1;
   width:100vw!important;
   padding:0!important;
-
+background-color: #80B1B3;
 
 
 }
@@ -2263,36 +2263,6 @@ animation:show_modal_opacity_effect 0.4s
 
    
 
-
-
-      .blog_image_mod_1{
-        /* background-image: url("../img/pexels-icon0-479453.jpg"); */
-        /* background-image: url("../img/pexels-picjumbo-com-55570-196658.jpg"); */
-        /* background-image: url("../img/pexels-ozge-sultan-temur-137931573-27811270.jpg"); */
-        background-image: url("../img/pexels-bclarkphoto-21492.jpg ");
-        
-
-        width: 100%;
-        height: 100%;
-        
-         /* border-radius: 2% 2% 0% 0% ; */
-         
-       -webkit-background-size: cover;
-        -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; 
-      background-repeat: no-repeat;
-      
-      
-      /* border-style: solid;
-      border-color: #688E15; */
-      -webkit-transition: all .2s ease;
-      -moz-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease;
-      
-      }
 
 
       .blog_main_scr{
