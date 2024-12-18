@@ -2177,11 +2177,10 @@ animation:show_modal_opacity_effect 0.4s
 
 @media (max-width: 1000px) {
  
-  .program_page_title{
-  width: 82%;
-  padding-top: 40px;
-  margin-left: 9%;
-  margin-right: 9%;
+  .program_page_subtitle{
+  
+  margin-top: 25px;
+  
   text-align: center;
   
   }
@@ -2352,7 +2351,7 @@ animation:show_modal_opacity_effect 0.4s
         .blog_main_scr_all_text_main{
          
           font-size: 18px;
-          max-height: 70vh;
+          max-height: 60vh;
           
         }
   
