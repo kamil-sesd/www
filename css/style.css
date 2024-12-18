@@ -2465,6 +2465,11 @@ animation-delay: 1.1s;
 }
 
 
+.kafelek:hover{
+  cursor: pointer;
+}
+
+
 /* hasło inaczej na telefonie  */
 
 @media (max-width: 1000px) {
