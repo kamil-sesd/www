@@ -756,6 +756,14 @@ height: 400px;
   object-fit:cover
 }
 
+.place_for_full_page_video img {
+  position:absolute;
+  width:100vw;
+  height:100%;
+  object-fit:cover
+}
+
+
 
 
 
@@ -1608,12 +1616,14 @@ margin-top: -37px;
     vertical-align: middle;
     line-height: 50px;
     
+    
     }
     
   
     .button_close_style:hover {
   
       color: grey;  
+      cursor: pointer;
       
       
       }
@@ -2157,7 +2167,7 @@ animation:show_modal_opacity_effect 0.4s
   font-family:'Courier New', Courier, monospace;
   letter-spacing: 0px;
   font-weight: 600;
-  
+  line-height: 0.95;
   
 }
 
@@ -2208,69 +2218,7 @@ animation:show_modal_opacity_effect 0.4s
 }
 
 
-.modal_form_zglos{
-  z-index:1001;
-  display:none;
-  /* padding-top:30px; */
-  /* position:fixed; */
 
-  position: fixed;
-  left:0px;
-  top:0px;
-  width:100%;
-  /* height: 650px; */
-  height: 90vh;
-  /* height: 100%;; */
-  /* overflow:auto; */
-  
-  /* background-color:rgba(0,0,0,0.35); */
-
-  
-  
-  
-}
-
-
-.modal_form_zglos_details{
-  position: relative;
-  display:block;
-   background-color: white;
-   border-radius: 1% 1% 1% 1%;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 1%;
-   width: 600px;
-   height: 100%;
-   
-   z-index:0;
-    
-
-}
-
-
-.modal_form_zglos_details iframe {
-width: 99%;
-margin-left: auto;
-margin-right: auto;
-height: 90%;
-position: absolute;
-
-}
-
-
-@media only screen and (max-width: 980px) {
- 
-
-  .modal_form_zglos_details{
-  
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 5%;
-    width: 94%;
-    
- }
-
-}
 
 
 
@@ -2314,35 +2262,8 @@ position: absolute;
 
 
 
-      .blog_img{
-        width: 100%;
-        height: 100%;
-         /* border-radius: 2% 2% 0% 0% ; */
-         
-       -webkit-background-size: cover;
-        -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; 
-      background-repeat: no-repeat;
-      
-      
-      /* border-style: solid;
-      border-color: #688E15; */
-      -webkit-transition: all .2s ease;
-      -moz-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease;
-      
-      }
-      
-      .blog_image_1{
-        /* background-image: url("../img/pexels-icon0-479453.jpg"); */
-        /* background-image: url("../img/pexels-eva-bronzini-7967622.jpg"); */
-        background-image: url("../img/pexels-padrinan-1591056_2.jpg");
-        
-      
-      }
+   
+
 
 
       .blog_image_mod_1{
@@ -2354,6 +2275,7 @@ position: absolute;
 
         width: 100%;
         height: 100%;
+        
          /* border-radius: 2% 2% 0% 0% ; */
          
        -webkit-background-size: cover;
@@ -2390,7 +2312,7 @@ position: absolute;
 
 
       .blog_main_scr_all_text_1{
-        margin-top: 60px;
+        margin-top: 55px;
         
       
       }
@@ -2419,7 +2341,7 @@ position: absolute;
 
 
 
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 900px) {
  
 
 
@@ -2429,7 +2351,7 @@ position: absolute;
         }
         .blog_main_scr_all_text_main{
          
-          font-size: 20px;
+          font-size: 18px;
           max-height: 70vh;
           
         }
@@ -2457,7 +2379,9 @@ position: absolute;
 
 margin-bottom: 40px;
 z-index: -1;
-background-color: rgb(113,11, 31, 0.15) ;
+/* background-color: rgb(113,11, 31, 0.15) ; */
+background-color: rgb(11,11, 11, 0.20) ;
+
 /* border-radius: 3%; */
 animation: moving 1.4s forwards;
 animation-delay: 1.1s;
@@ -2470,24 +2394,6 @@ animation-delay: 1.1s;
 }
 
 
-/* hasło inaczej na telefonie  */
-
-@media (max-width: 1000px) {
- 
-  .kafelek{
-  height: 303px;
-  
-  }
-
-
-  .program_kafelek_text{
-    height: 303px;
-    
-    
-    }
-
-
-}
 
 
 
@@ -2566,69 +2472,24 @@ color: #fff;
 }
 
 
-.zaloz_element{
-  cursor: pointer;
-   margin-left: 10px;
-   margin-right: 10px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-color:#688E15;
-    padding: 2px 2px 2px 2px;
+
+
+
+/* hasło inaczej na telefonie  */
+
+@media (max-width: 1000px) {
+ 
+  .kafelek{
+  height: 303px;
+  
+  }
+
+
+  .program_kafelek_text{
+    height: 303px;
     
+    
+    }
+
+
 }
-
-
-.zaloz_element:hover {
-  background-color: grey;
-  /*   padding: 5px 5px 5px 5px; */
-  border-style: solid;
-  border-color:transparent;
-}
-
-
-
-.zglos_element{
-  font-size: 17px;
-  margin-bottom: 5px
-}
-
-.zglos_standard{
-   cursor: pointer;
-   font-size: 16px;
-   color:black;
-   position: relative;
-   margin-right: 20px;
-   margin-left: 20px;
-   padding: 2px 2px 2px 2px;
-   background-color:#82B11B;
-}
-
-.zglos_standard:hover{
-  
-  background-color:rgb(153 , 211 , 31, 1   )
-}
-
-
-
-
-
-.zglos_online{
-  cursor: pointer;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding: 2px 2px 2px 2px;
-  background-color:rgb(35, 31, 32);
-}
-
-
-
-
-.zglos_online:hover{
-  
-  background-color:#413A3B
-  
-}
-
-
-
