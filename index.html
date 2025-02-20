@@ -76,6 +76,18 @@
   
 
 
+  
+  $(function(){
+    
+    $(".oferta_opis a").on('click', function(){
+  $("html, body").animate({
+  
+  scrollTop: $($.attr(this, 'href')).offset().top
+  
+  }, 1000);
+  });
+  });
+  
 
   
 
@@ -254,6 +266,9 @@ window.addEventListener("load", function () {
 <div style="z-index: 999;position: relative;display:none ;"  > <a id="close02_click" href="#SHOW_APP02_START">co to </a></div>
 <div style="z-index: 999;position: relative;display:none ;"  > <a id="close03_click" href="#SHOW_APP03_START">co to </a></div>
 
+
+<!-- strona startowa -->
+
 <section id='home' class="basic_screen_style" style="background-color:white;z-index: 0;"> 
 
 
@@ -423,12 +438,9 @@ window.addEventListener("load", function () {
   </section>
 
 
+<!-- oferta -->
 
-
-  <section id='offer' class="basic_screen_style" style=
-  "
-   background-color:#F5F5F5; 
-  z-index: 0;"
+  <section id='offer' class="basic_screen_style" style="background-color:#F5F5F5; z-index: 0;"
   >
 
 
@@ -541,10 +553,49 @@ window.addEventListener("load", function () {
 
 
 
+          <div class="oferta_kafelek">
+             
+            <!-- obraz -->
+            <div class="oferta_img image_4"> </div>
+          
+                      <!-- nazwa dziedzina -->    
+                          <div  class="oferta_dziedzina"> 
+                          DATA STORYTELLING
+                         </div>
+                    
+          
+                         <!-- dziedzina opis -->
+                         <div class="oferta_opis">  
+                          Przekładam dane na zrozumiałe dla każdego opowiadania.  
+                          Osadzając dane we właściwych kontekstach tworzę narracje, odkrywam nieznane lub wcześniej niedostrzegalne. 
+                          <!-- Na <a href="#blog">blogu</a> nietypowa próbka. -->
+
+                          </div>
+                    
+                    </div>
+          
 
 
-
-
+                    <div class="oferta_kafelek">
+             
+                      <!-- obraz -->
+                      <div class="oferta_img image_5"> </div>
+                    
+                                <!-- nazwa dziedzina -->    
+                                    <div  class="oferta_dziedzina"> 
+                                    KONSULTING
+                                   </div>
+                              
+                    
+                                   <!-- dziedzina opis -->
+                                   <div class="oferta_opis">  
+                                    Doradzam zarówno w przypadku zagadnień o charakterze strategicznym, jak i technicznym.  
+                                  Wszędzie tam, gdzie celem jest odkrywanie wiedzy płynącej z danych. 
+                                  
+                                    </div>
+                              
+                              </div>
+                    
 
 
 
@@ -603,9 +654,11 @@ window.addEventListener("load", function () {
       class="button_close_style" >&times;
       </span>
 
-      <div style="height:100%;width:100vw;"> 
-        <iframe src="" frameborder="0" id="frame01"
-        style="height:100%;width:99vw; "
+      <div style="height:100%;width:100%;"> 
+        <iframe src="" frameborder="0" id="frame01" 
+        style="height: 100vh;
+        width: 100vw;
+        position:fixed;"
         ></iframe>
       </div>
     
@@ -619,7 +672,9 @@ window.addEventListener("load", function () {
       
      
     <div class="job_offer_modal_details" >
-    <div style="background-color: white;height: 100%;" id="SHOW_APP02_START">
+      
+      <div style="background-color: white;height: 100%;" id="SHOW_APP02_START">
+      
       
       
     
@@ -640,9 +695,11 @@ window.addEventListener("load", function () {
       class="button_close_style">&times;
       </span>
 
-      <div style="height:100%;width:100%;">
-        <iframe src="" frameborder="0" id="frame02"
-        style="height:100%;width:100% "
+      <div style="height:100%;width:100%;"> 
+        <iframe src="" frameborder="0" id="frame02" 
+        style="height: 100vh;
+        width: 100vw;
+        position:fixed;"
         ></iframe>
       </div>
 
@@ -682,9 +739,11 @@ window.addEventListener("load", function () {
       class="button_close_style">&times;
       </span>
 
-      <div style="height:100%;width:100%;">
-        <iframe src="" frameborder="0" id="frame03"
-        style="height:100%;width:99vw "
+      <div style="height:100%;width:100%;"> 
+        <iframe src="" frameborder="0" id="frame03" 
+        style="height: 100vh;
+        width: 100vw;
+        position:fixed;"
         ></iframe>
       </div>
 
@@ -761,9 +820,9 @@ window.addEventListener("load", function () {
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
            onclick="
-           
+            document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
            document.getElementById('frame01').src = 'https://kamilsesd.shinyapps.io/WyzwaniaDemograficzne/';
-           document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
+          
           document.getElementById('close01_click').click();
           document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
@@ -807,8 +866,10 @@ window.addEventListener("load", function () {
         <div class="button_div_play">
           <button  style="border: none;background-color: transparent;"
           onclick="
-          document.getElementById('frame02').src = 'https://kamilsesd.shinyapps.io/ElastycznoscCenowaAnkieta';
+          
+          
           document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
+          document.getElementById('frame02').src = 'https://kamilsesd.shinyapps.io/ElastycznoscCenowaAnkieta';
           document.getElementById('close02_click').click();
           document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
@@ -1140,18 +1201,29 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 
 
 
+<!-- blog -->
 
+<section id='blog' class="basic_screen_style" style="background-color:rgb(32,32,32,0.35  ) "> 
 
-<section id='blog' class="basic_screen_style" style="background-color:transparent "> 
-
-  <div class="place_for_full_page_video" style="z-index: -1; display:block;position: absolute; height: 100vh;">
-
-    
-   
-    <img src="img/pexels-padrinan-1591056_2.jpg" alt="">
   
-      </div> 
 
+  <div class="place_for_full_page_video" style="z-index: 1; display:block;position: absolute; min-height: 100vh;
+  
+  ">
+
+  
+
+<div class="color_as_back"></div>    
+   
+    <!-- <img src="img/pexels-padrinan-1591056_2.jpg" alt=""> -->
+    <!-- <img src="img/pexels-a-darmel-7641994.jpg" alt="">
+      -->
+   <!-- <img src="img/pexels-bclarkphoto-21492.jpg" alt=""> -->
+   <!-- <img src="img/pexels-cottonbro-6803527.jpg" alt=""> -->
+   <!-- <img src="img/pexels-pavel-danilyuk-6716003_3.jpg" alt=""> -->
+   <img src="img/pexels-cottonbro-6803527_3.jpg" alt="">
+   
+      
 <!-- w tym miejscu blog -->
 
 <div id="SHOW_BLOG001" class="job_offer_modal">
@@ -1159,6 +1231,7 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
    <div class="place_for_full_page_video"  >
 
     
+<div class="color_as_back2"></div>    
    
     <img src="img/pexels-bclarkphoto-21492.jpg" alt="">
   
@@ -1175,7 +1248,7 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
     class="button_close_style">&times;
     </span>
 
-    <div style="min-height:100%;width:100%;background-color:transparent;justify-content: center;
+    <div style="height:100%;width:100%; ;;justify-content: center;
     align-items: center;display: flex;flex-wrap: wrap;
     " >
 
@@ -1191,9 +1264,7 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 
   <div class="blog_main_scr_all_text_1">
    <div class="blog_main_scr_all_text_main" >
-   <div style="font-weight: 600;">
-    Zupełnie nic. To pierwszy wpis.
-  </div>  
+   
   <div style="margin-top:4px ;">
     Blog jest próbą zbudowania czegoś, co sam lubię czytać (przeglądać),
     a czego w polskim Internecie jest zdecydowanie za mało. 
@@ -1234,13 +1305,81 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
 </div> 
   
 
+<div id="SHOW_BLOG002" class="job_offer_modal">
+      
+  <div class="place_for_full_page_video"  >
+
+   
+<div class="color_as_back2"></div>    
   
+    <img src="img/pexels-bclarkphoto-21492.jpg" alt="">
+ 
+     </div>    
+
+ <div class="job_offer_modal_details" >
+ <div style="height: 100%;">
+   
+   
+ 
+   
+   <span onclick="document.getElementById('SHOW_BLOG002').classList.remove('show_modal_from_above')" 
+
+   class="button_close_style">&times;
+   </span>
+
+   <div style="height:100%;width:100%; ;;justify-content: center;
+   align-items: center;display: flex;flex-wrap: wrap;
+   " >
+
+
+
+     <div class="blog_main_scr" >
+       <div class="blog_main_scr_all_text">
+ <div class="blog_main_scr_all_text_1">
+   <span class="blog_main_scr_all_text_title" >Co mówią dane</span>  
+ <span class="blog_main_scr_all_text_title" >o aspiracjach edukacyjnych Polaków?</span>  
+ </div>
+
+
+ <div class="blog_main_scr_all_text_1">
+  <div class="blog_main_scr_all_text_main" >
+  
+ <div style="margin-top:4px ;">
+   W pierwszym odcinku bardzo ważny temat i bardzo nietypowa forma prezentacji.
+   Polecam, jeśli ciekawi Cię a) co charakteryzuje polskie społeczeństwo pod względem edukacji lub b) jak wygląda data storytelling...na świeżym powietrzu:).
+  </div> 
+   
+  <div style="margin-top:4px ;">
+   <span class="link_blog"> <a target="_blank" href="https://www.youtube.com/watch?v=cMsEGrngO3w"> Całość do obejrzenia tu!  </a>  </span> 
+  
+</div>
+  
+
+  
+
+
+
+   </div> 
+   </div>
+
+
+</div>
+     </div>
+
+
+     
+   </div>
+ 
+ 
+</div>
+</div>  
+</div> 
   
     <!-- kafelki z programami -->
  
  
     <div class="con_programy">
-      <!-- <div class="program_page_title"> Blog </div> -->
+      <div class="program_page_title"> Blog </div>
       <div class="program_page_subtitle"> Co mówią dane? </div>
       
  
@@ -1249,6 +1388,46 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
  <!-- Pierwszy kafalek = PROGRAM 1 -->
  <!-- ---------------------------------------- -->
  
+<!--   <div  class="kafelek" onclick="document.getElementById('SHOW_BLOG002').classList.add('show_modal_from_above')" >
+                 
+  <div class="program_kafelek_text">
+  
+    
+    <div  class="program_data"> 
+      8 marca 2025
+   </div>
+
+
+
+   <div  style="font-family: 'Courier New', Courier, monospace;
+    font-size: 35px; 
+     display: flex;
+      text-align: center;
+       align-items: baseline;
+       justify-content:center;
+        margin-top: 20px;
+        /* background-color: rgba(44, 233, 227, 0.22); */
+        ">  
+        #1
+        <br>
+    O aspiracjach
+   
+   <br>
+   edukacyjnych
+   
+   <br>
+   Polaków
+
+    </div>
+  
+
+  </div>
+
+
+
+
+</div>  -->
+
  <div  class="kafelek" onclick="document.getElementById('SHOW_BLOG001').classList.add('show_modal_from_above')" >
                  
                <div class="program_kafelek_text">
@@ -1260,20 +1439,29 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
            
  
  
-                <div 
-                
-                style="font-family: 'Courier New', Courier, monospace;
-                 font-size: 40px; 
-                  display: flex;
-                   justify-content: center;
-                    align-items: center;
-                     height: 200px;">  
-                 O moim
-                
-                <br>
-                blogu
-                
-                 </div>
+
+                <div  style="font-family: 'Courier New', Courier, monospace;
+                font-size: 35px; 
+                 display: flex;
+                  text-align: center;
+                   align-items: baseline;
+                   justify-content:center;
+                    margin-top: 30px;
+                    /* background-color: rgba(44, 233, 227, 0.22); */
+               
+               ">  
+                 #0
+                 <br>
+                O moim
+               
+               <br>
+               blogu
+               
+            
+                </div>
+              
+
+
                
            
                </div>
@@ -1284,7 +1472,11 @@ Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomo
            </div>
          
  
+</div> 
 
+
+
+</div> 
 
 
 </section>
