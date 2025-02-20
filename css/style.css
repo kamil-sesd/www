@@ -12,6 +12,13 @@
   background-color:rgb(32,32,32,0.45  )
 }
 
+.color_as_back2{
+  position:absolute;
+  width: 100%;
+  height: 100%; 
+  z-index: 1;
+  background-color:rgb(32,32,32,0.45  )
+}
 
 
 
@@ -1168,11 +1175,19 @@ vertical-align: middle;
 }
 
 
-.oferta_img:hover{
+.image_4{
+  background-image: url("../img/pexels-cottonbro-6803527_6.jpg");
 
-  
-  height: 230px;
 }
+
+
+.image_5{
+  background-image: url("../img/pexels-kampus-8428092_4.jpg");
+
+}
+
+
+
 
 
 /* animacja do ruszania kafelków z dziedziną  */
@@ -1646,23 +1661,25 @@ margin-top: -37px;
     left:0px;
     top:0px;
     width:100vw;
-    height:100vh;
+    height:100%;
     /* overflow:auto; */
     
-    background-color:red
+   /* background-color: grey */
   }
   
   .job_offer_modal_details{
- width: 100%;
- height:100%;
+    width:100vw;
+    height:100vh;
  position: absolute;
+/*  background-color: red; */
  
   }
 
   .show_modal_from_above{
   /* position:relative; */
   z-index: 99;
-  animation:show_modal_from_above_effect 1.0s
+  animation:show_modal_from_above_effect 1.0s;
+  
   }
   
   @keyframes show_modal_from_above_effect{
@@ -2139,7 +2156,7 @@ animation:show_modal_opacity_effect 0.4s
   margin-top: 2%;
   margin-bottom: 0px;
   border-radius: 30px;
-  color: black;
+  color:#E8E8E8;
   font-size: 31px;  
 
   font-family: "minion-pro", serif;
@@ -2161,7 +2178,7 @@ animation:show_modal_opacity_effect 0.4s
   margin-left: 6%;
   margin-right: 6%;
   margin-bottom: 0px;
-  margin-top: 45px;
+  margin-top: 15px;
   border-radius: 30px;
   color: white;
   font-size: 66px;  
@@ -2203,7 +2220,7 @@ animation:show_modal_opacity_effect 0.4s
   margin-left: 6%;
   margin-right: 4%;
  /* background-color: red;  */
-    z-index: 0;
+    z-index: 2;
 }
 
 
@@ -2268,9 +2285,11 @@ animation:show_modal_opacity_effect 0.4s
 
 
       .blog_main_scr{
-      background-color:rgb(100, 100, 100, 0.5);
-      min-height:100vh;
+    
+      /* background-color: #80B1B3; */
+      height:100%;
       width: 100%;
+      z-index: 2;
       }
 
       .blog_main_scr_all_text{
@@ -2342,7 +2361,7 @@ animation:show_modal_opacity_effect 0.4s
 .kafelek{
   position: relative;
    width: 300px;
-   height: 294px;
+   height: 240px;
   margin-right: 20px;
   margin-left: 20px;;
   margin-top: 20px;
@@ -2351,7 +2370,10 @@ animation:show_modal_opacity_effect 0.4s
 margin-bottom: 40px;
 z-index: -1;
 /* background-color: rgb(113,11, 31, 0.15) ; */
-background-color: rgb(11,11, 11, 0.20) ;
+/* background-color: rgb(11,11, 11, 0.20) ; */
+
+/* background-color: rgba(255, 0, 0, 0.149); */
+background-color: rgba(44, 233, 227, 0.22);
 
 /* border-radius: 3%; */
 animation: moving 1.4s forwards;
@@ -2407,7 +2429,7 @@ animation-delay: 1.1s;
 .program_kafelek_text{
   position: absolute;
   width: 100%;
-  height: 294px;
+  height: 240px;
   /* margin-right: 20px; */
 margin-top: 0px;
   padding-top: 10px;
@@ -2421,6 +2443,7 @@ z-index: 0;
 text-align: center;
 color: #fff;
 /* background-color: rgba(41, 41, 41, .50); */
+/* background-color: blue; */
 
 }
 
@@ -2464,3 +2487,41 @@ color: #fff;
 
 
 }
+
+
+
+
+
+
+
+.oferta_opis a {
+  text-decoration: none;
+  color:#59584A ;
+ 
+  
+  
+}
+
+
+.oferta_opis a:hover{
+  
+  /* color: #7A7966;   */
+  color:rgb(128,177, 179)
+  
+  /* color:red ; */
+}
+
+
+.link_blog a{ 
+text-decoration: none;
+color: #548A8C;
+;
+}
+
+.link_blog a:hover{ 
+  
+  color:#59584A;
+  ;
+  }
+  
+  
