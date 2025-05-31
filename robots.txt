@@ -1,5 +1,72 @@
 User-agent: *
-Allow: index.html
-Disallow: /
+
+Disallow: /css/
+Disallow: /doc/
+Disallow: /img/
+Disallow: /js/
+Disallow: /videos/
+
+Disallow: /EN/css/
+
+# all crawlers 
 User-agent: name-of-bot
 Disallow: /
+
+#  LIST ALL KNOWN crawlers BY NAME
+
+# GPTBot 
+User-agent: GPTBot
+Disallow: /
+
+# Google's bot Bard
+User-agent: Google-Extended
+Disallow: /
+
+# ChatGPT-User 
+User-agent: ChatGPT-User
+Disallow: /
+
+# Common Crawl bot
+User-agent: CCBot
+Disallow: /
+
+# PiplBot 
+User-agent: PiplBot
+Disallow: /
+
+# anthropic-ai is Anthropic's web crawler
+User-agent: anthropic-ai
+Disallow: /
+
+# Claude-Web 
+User-agent: Claude-Web
+Disallow: /
+
+# TurnitinBot web crawler
+User-agent: TurnitinBot
+Disallow: /
+
+# PetalBot web crawler
+User-agent: PetalBot
+Disallow: /
+
+# MoodleBot  web crawler
+User-agent: MoodleBot
+Disallow: /
+
+# magpie-crawler web crawler
+User-agent: magpie-crawler
+Disallow: /
+
+# ia_archiver web crawler
+User-agent: ia_archiver
+Disallow: /
+
+# Applebot-Extended is Apple's secondary user agent
+User-agent: Applebot-Extended
+Disallow: /
+
+# PerplexityBot 
+User-Agent: PerplexityBot
+Disallow: /
+
