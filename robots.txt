@@ -1,2 +1,5 @@
 User-agent: *
+Allow: index.html
+Disallow: /
+User-agent: name-of-bot
 Disallow: /
