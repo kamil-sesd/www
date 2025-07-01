@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- podstawowe informacje  -->
+    <meta charset="UTF-8">
+    <title>Kamil Sapała – R Programmer, Data Analyst, Sociologist</title>
+    <meta name="description" content="I specialize in data processing, automation, complex analysis and reporting.">
+    <meta name="keywords" content="Shiny,HTML,CSS,JavaScript">
+    <meta name="author" content="Kamil Sapała">
+    <meta name="viewport" content="width-device-width, initial-scale=1"> 
+    
+
+     <!-- dadanie favicon'a -->
+     <link rel="icon" href="../img/image2.png" type="image/x-icon">
+     
+    <link rel="stylesheet" href="css/style.css">
+     <!-- <script type="application/html-dependencies">json2[2014.02.04];jquery[3.4.1];shiny[1.4.0.2];bootstrap[3.4.1]</script> -->
+     <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+
+
+    
+
+    <script src="../js/SendMail.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("SkuUp6T01-jpzcUvf");
+      })();
+    </script>
+    
+
+<!--  funkcja do łagodnego przechodzenia przez menu do poszczególnych ekranów -->
+
+<script type="text/javascript" >
+
+  $(function(){
+    
+    $(".navbar_styl a").on('click', function(){
+  $("html, body").animate({
+  
+  scrollTop: $($.attr(this, 'href')).offset().top
+  
+  }, 1000);
+  });
+  });
+  
+  
+  $(function(){
+    
+    $(".left_menu a").on('click', function(){
+  $("html, body").animate({
+  
+  scrollTop: $($.attr(this, 'href')).offset().top
+  
+  }, 1000);
+  });
+  });
+  
+
+
+  $(function(){
+    
+    $(".omnie_hiperlink a").on('click', function(){
+  $("html, body").animate({
+  
+  scrollTop: $($.attr(this, 'href')).offset().top
+  
+  }, 1000);
+  });
+  });
+  
+
+
+  
+  $(function(){
+    
+    $(".oferta_opis a").on('click', function(){
+  $("html, body").animate({
+  
+  scrollTop: $($.attr(this, 'href')).offset().top
+  
+  }, 1000);
+  });
+  });
+  
+
+  
+
+
+
+  
+  
+  </script>
+      
+
+</head>
+<body>
+
+
+<!-- w tym miejscu daję loader, żeby strona zanim się wczyta cała zająć czymś ekran -->
+
+<style>
+  @keyframes  move_loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+</style>
+
+<div id="div_loader"  style="position: fixed;
+z-index: 1199;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center; 
+ align-items: center;
+background-color:black;
+background-size:100%;">
+
+<div >
+
+
+<div style="
+    width: 50px;
+    height: 50px;
+    padding: 40px;
+    border: 22px dashed cadetblue;
+    border-radius: 50%;
+    animation: move_loader 2.9s infinite;
+">
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<script>
+window.addEventListener("load", function () {
+    const loader_ele = document.getElementById("div_loader");
+    loader_ele.className += " hidden_class"; 
+});
+
+
+/* setTimeout(
+  function() {
+    const loader_ele = document.getElementById("div_loader");
+     loader_ele.className += " hidden_class"; 
+    
+    }
+     ,
+      1400) */
+
+      
+
+</script> 
+
+
+
+<!-- --------------------------------------- -->
+<!-- EKRAN przedwstępny - menu boczne tylko poniżej 1000 px -->
+<!-- --------------------------------------- -->
+
+
+<div class="left_menu">
+  <input type="checkbox" id="active" class="format_butt">
+  <label for="active" ><span></span></label>
+  <label for="active" ></label>
+  <div class="hamburger" >
+      <span class="top_line"></span>
+      <span class="middle_line"></span>
+      <span class="bottom_line"></span>
+    </div>          
+  <div class="navigation_menu">
+      
+              <ul class="list_section"> 
+               <div class = 'nav_list_item'>
+                    <li>
+
+                      <a class="change_img_home"  onclick="javascript:document.getElementById('active').checked = false;"  href="#home" title="">
+                        <img src="../img/HOME2.png"   height="21px"/>
+                            <img src="../img/HOME.png" height="21px" hidden>
+                      </a>
+
+                      
+                      
+                      
+                    </li>           
+               </div>
+               <div class = 'nav_list_item'>
+                <li>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#about" title="">About me </a>
+                </li>           
+              </div>
+
+              <div class = 'nav_list_item'>
+                <li>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#offer" title="">Hire me </a>
+                </li>           
+              </div>
+
+
+
+              <div class = 'nav_list_item'>
+                <li>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#portfolio" title="">Portfolio  </a>
+                </li>           
+              </div>
+              <div class = 'nav_list_item'>
+                <li>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#contact" title="">Contact </a>
+                </li>           
+              </div>
+
+              <div class = 'nav_list_item'>
+                <li>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#blog" title="">Blog </a>
+                </li>           
+              </div>
+
+              <!-- <div class = 'nav_list_item'>
+                <li>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#blog" title="">Blog </a>
+                </li>           
+              </div> -->
+               
+           </ul>
+           
+          
+          </div>
+      
+      </div>
+
+
+
+
+
+<!-- --------------------------------------- -->
+<!-- EKRAN 0 - strona startowa -->
+<!-- --------------------------------------- -->
+
+<!-- <div style="background-color: white;height: 100vh;width: 100vw;position: fixed;">AAAAAAAAAA</div> -->
+
+<div style="z-index: 999;position: relative;display:none ;"  > <a id="hidden_portfolio_click" href="#portfolio">a</a></div>
+
+<div style="z-index: 999;position: relative;display:none ;"  > <a id="close01_click" href="#SHOW_APP01_START">co to </a></div>
+<div style="z-index: 999;position: relative;display:none ;"  > <a id="close02_click" href="#SHOW_APP02_START">co to </a></div>
+<div style="z-index: 999;position: relative;display:none ;"  > <a id="close03_click" href="#SHOW_APP03_START">co to </a></div>
+
+
+<!-- strona startowa -->
+
+<section id='home' class="basic_screen_style" style="background-color:white;z-index: 0;"> 
+
+
+
+
+    <!-- kolor jako tło przed obrazem -->
+
+    <div class="color_as_back">    
+
+    </div>
+    
+
+    <!-- menu do nawigacji - górne -->
+    <div class="con_nav" >
+
+
+      
+        <!-- pozostałe guziki MENU GÓRNE -->
+        <div class="hide_menu_upp" >
+        <ul class="navbar_styl" >
+          <li style="margin-top: -2px !important;;margin-right: -10px !important;">  <a href="#" class="change_img_home"> 
+            <img src="../img/HOME2.png"   height="21px"/>
+              <img src="../img/HOME.png" height="21px" hidden >
+                
+          </a></li>
+            <li><a href="#about"> About me </a></li>
+            
+            <li><a href="#offer">Hire me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            
+            <li><a  href="#contact">Contact</a></li>
+            <li><a href="#blog"> <span class="blog_in_menu">Blog</span>   </a></li>
+          </ul>
+        </div>
+        
+          
+    
+    </div>
+
+  
+
+<!-- pozostałe lementy na sronie głównej -->
+
+<div class="con_main" >
+ 
+<div class="con_main_text"  >
+
+  <div>
+
+<div id="nag_tit" class="con_main_text_haslo" > What data tells?</div>
+
+<div style="padding-bottom: 10px;">
+  This is a key question that I answer every day in my work.
+   I am an R programmer - a specialist in data processing, analysis and visualization.
+    Sociological background makes that I work mainly in the area of market and social research.
+  </div>
+  <div>
+    I believe that data allows us not only to make key decisions in business, 
+    but above all to notice and understand the changes taking place in the economy, culture and society.
+    
+  </div>
+  
+<div class="podpis" >Kamil Sapała</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="place_for_full_page_video">
+
+  <video preload="yes"  autoplay muted loop playsinline >
+   <source src="../videos/EXAMPLE19.mp4" type="video/mp4" />
+   
+   
+ </video>
+
+    </div> 
+
+  
+
+    <script>
+      document.querySelector('video').playbackRate = 0.87;
+    </script>
+    
+  </section>
+  
+  
+
+
+<!-- ------------------------------- -->
+<!-- zakładka 2 - O mnie -->
+<!-- ------------------------------- -->
+
+
+  <section id='about' class="basic_screen_style" style="background-color:#E8E8E8;"> 
+
+    <div class="omnie_flex_div" >
+  
+    <div class="omnie_opis_element">
+    <div class="margin_1" >
+    
+    
+    <div class="header_text_style">About me
+  
+    </div>
+  
+    
+    <div class="main_text_style">
+      I specialize in the automation of data processing, advanced analysis and reporting.
+      I have been professionally involved in data analysis since 2014.
+      
+      I have worked for companies in the research, cybersecurity,
+      HR analytics and also in public institutions.
+      
+      <div style="margin-top: 5px;">
+        The tools I use on a daily basis are R, Shiny, HTML, CSS, JavaScript.
+
+        I find the most satisfaction in projects in which results are reported
+        in the form of applications/interactive dashboards.
+        These are tailored Business Intelligence solutions.
+        
+      </div>
+      
+  
+    </div>
+
+
+<div>
+  
+</div>
+
+    <div class="main_text_style" style="margin-top: -5px;">
+      What sets me apart is my commitment, reliability, enthusiasm and ability to recognize needs.
+
+      If this description interests you, check out my  
+
+      <span class="omnie_hiperlink"><a href="#offer">offer</a></span><!--
+      --><span > and sample applications that I have posted in the 
+      
+        <span class="omnie_hiperlink"><a href="#portfolio">portfolio</a></span><!--
+        --><span >. 
+
+        
+        
+  
+    </div>
+  
+  
+  </div>
+  
+  
+  
+  </div>
+  
+  
+  <div class="omnie_foto_element">
+    
+    <div class="omnie_foto_element_div">
+        
+      <img  src="../img/PS22.jpeg" alt="">
+    </div>
+    
+    </div>
+  
+  
+  
+  </div>
+  </div>
+  
+  
+   
+  </section>
+
+
+<!-- oferta -->
+
+  <section id='offer' class="basic_screen_style" style="background-color:#F5F5F5; z-index: 0;"
+  >
+
+
+  <!-- <div class="oferta_program_page_title"> 
+    Moją wiedzę i umiejętności wykorzytuję głównie w trzech dziedzinach
+ </div> -->
+
+
+
+ <div class="nag_oferta_con" >
+
+ <div class="nag_oferta_title" >Offer</div>
+
+
+ <div class="nag_oferta_subtitle" >
+  Areas in which I use my knowledge, experience and skills on a daily basis
+   </div>
+
+
+  </div>
+
+   <!-- kafelki z o nas - szczegóły -->
+
+   <div class="con_oferta">
+
+
+
+<!-- ---------------------------------------- -->
+<!-- 1 kafalek =  -->
+<!-- ---------------------------------------- -->
+
+
+<div class="oferta_kafelek">
+             
+  <!-- obraz -->
+  <div class="oferta_img image_1"> </div>
+
+            <!-- nazwa dziedzina -->    
+                <div  class="oferta_dziedzina"> 
+                  DATA ANALYSIS
+               </div>
+          
+
+               <!-- dziedzina opis -->
+               <div class="oferta_opis">  
+                From explorating data, through processing automation and building advanced models,
+                 to presentation of results on understandable visualizations.
+
+                </div>
+          
+          </div>
+
+
+
+
+<!-- ---------------------------------------- -->
+<!-- 2 kafalek -->
+<!-- ---------------------------------------- -->
+
+
+<div class="oferta_kafelek">
+             
+  <!-- obraz -->
+  <div class="oferta_img image_2"> </div>
+
+            <!-- nazwa dziedzina -->    
+                <div  class="oferta_dziedzina"> 
+                BUILDING APPS
+               </div>
+          
+
+               <!-- dziedzina opis -->
+               <div class="oferta_opis">  
+                Using commonly used technologies (html, css, JavaScript, R). 
+                From ordinary websites to dashboards and complex interactive analytical applications, including those operating in real time.
+                </div>
+          
+          </div>
+        
+
+
+
+
+
+<!-- ---------------------------------------- -->
+<!-- 3 kafalek =  -->
+<!-- ---------------------------------------- -->
+
+
+<div class="oferta_kafelek">
+             
+  <!-- obraz -->
+  <div class="oferta_img image_3"> </div>
+
+            <!-- nazwa dziedzina -->    
+                <div  class="oferta_dziedzina"> 
+                  MARKET RESEARCH
+               </div>
+          
+
+               <!-- dziedzina opis -->
+               <div class="oferta_opis">  
+                Using quantitative methods. From creating questionnaires, 
+                to scripts for conducting online survey, 
+                preparing report and its presentation.
+                </div>
+          
+          </div>
+
+          <div style="width: 100%;background-color:transparent"></div>
+
+          <div class="oferta_kafelek">
+             
+            <!-- obraz -->
+            <div class="oferta_img image_4"> </div>
+          
+                      <!-- nazwa dziedzina -->    
+                          <div  class="oferta_dziedzina"> 
+                          DESK RESEARCH
+                         </div>
+                    
+          
+                         <!-- dziedzina opis -->
+                         <div class="oferta_opis">  
+                          I collect, verify, evaluate, analyze and interpret publicly available data,
+                            that can be downloaded directly, but also data that requires the use of methods that
+                             automate the download process (e.g. web scraping).
+                          <!-- Na <a href="#blog">blogu</a> nietypowa próbka. -->
+
+                          </div>
+                    
+                    </div>
+
+          <div class="oferta_kafelek">
+             
+            <!-- obraz -->
+            <div class="oferta_img image_5"> </div>
+          
+                      <!-- nazwa dziedzina -->    
+                          <div  class="oferta_dziedzina"> 
+                          DATA STORYTELLING
+                         </div>
+                    
+          
+                         <!-- dziedzina opis -->
+                         <div class="oferta_opis">  
+                          I translate data into stories that everyone can understand.
+                           By placing data in appropriate contexts I create narrative and discover the unknown or previously imperceptible.
+                          <!-- Na <a href="#blog">blogu</a> nietypowa próbka. -->
+
+                          </div>
+                    
+                    </div>
+          
+
+
+                    <div class="oferta_kafelek">
+             
+                      <!-- obraz -->
+                      <div class="oferta_img image_6"> </div>
+                    
+                                <!-- nazwa dziedzina -->    
+                                    <div  class="oferta_dziedzina"> 
+                                      CONSULTING
+                                   </div>
+                              
+                    
+                                   <!-- dziedzina opis -->
+                                   <div class="oferta_opis">  
+                                    
+                                    I advise on both strategic and technical issues. Wherever the goal is to discover knowledge from data.
+                                  
+                                    </div>
+                              
+                              </div>
+                    
+
+
+
+
+
+        </div>       
+    
+  
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- --------------------------------------- -->
+<!-- portfolio poprawione -->
+<!-- --------------------------------------- -->
+
+
+
+
+<section id='portfolio' class="basic_screen_style" style="background-color:#E8E8E8;"> 
+
+  <div id="SHOW_APP01" class="job_offer_modal">
+      
+     
+    <div class="job_offer_modal_details" >
+      
+      <div style="background-color: white;height: 100%;" id="SHOW_APP01_START">
+      
+      
+    
+      
+      <span  onclick="
+           document.getElementById('SHOW_APP01').classList.remove('show_modal_from_above');
+           document.getElementById('frame01').src = '';
+          document.getElementById('pomoc').classList.add('hide');
+          document.getElementById('pomoc1').classList.remove('hide');
+           document.getElementById('home').classList.remove('hide');
+           document.getElementById('about').classList.remove('hide');
+           document.getElementById('offer').classList.remove('hide');
+           document.getElementById('contact').classList.remove('hide');
+           document.getElementById('blog').classList.remove('hide');
+           
+           document.getElementById('hidden_portfolio_click').click();
+           
+      
+      
+      " 
+       
+      class="button_close_style" >&times;
+      </span>
+
+      <div style="height:100%;width:100%;"> 
+        <iframe src="" frameborder="0" id="frame01" 
+        style="height: 100vh;
+        width: 100vw;
+        position:fixed;"
+        ></iframe>
+      </div>
+    
+    
+   </div>
+  </div>  
+  </div>  
+
+ 
+  <div id="SHOW_APP02" class="job_offer_modal">
+      
+     
+    <div class="job_offer_modal_details" >
+      
+      <div style="background-color: white;height: 100%;" id="SHOW_APP02_START">
+      
+      
+      
+    
+      
+      <span onclick="
+           document.getElementById('SHOW_APP02').classList.remove('show_modal_from_above');
+           document.getElementById('frame02').src = '';
+           document.getElementById('pomoc').classList.add('hide');
+           document.getElementById('pomoc1').classList.remove('hide');
+           document.getElementById('home').classList.remove('hide');
+           document.getElementById('about').classList.remove('hide');
+           document.getElementById('offer').classList.remove('hide');
+           document.getElementById('contact').classList.remove('hide');
+           document.getElementById('blog').classList.remove('hide');
+           
+           document.getElementById('hidden_portfolio_click').click();
+      " 
+      class="button_close_style">&times;
+      </span>
+
+      <div style="height:100%;width:100%;"> 
+        <iframe src="" frameborder="0" id="frame02" 
+        style="height: 100vh;
+        width: 100vw;
+        position:fixed;"
+        ></iframe>
+      </div>
+
+      
+        
+      
+    
+    
+   </div>
+  </div>  
+  </div>  
+
+  <div id="SHOW_APP03" class="job_offer_modal">
+    
+   
+    <div class="job_offer_modal_details" >
+    <div style="background-color: white;height: 100%;" id="SHOW_APP03_START">
+      
+      
+    
+      
+      <span onclick="
+          document.getElementById('SHOW_APP03').classList.remove('show_modal_from_above');
+          document.getElementById('frame03').src = '';
+           document.getElementById('pomoc').classList.add('hide');
+           document.getElementById('pomoc1').classList.remove('hide');
+
+           document.getElementById('home').classList.remove('hide');
+           document.getElementById('about').classList.remove('hide');
+           document.getElementById('offer').classList.remove('hide');
+           document.getElementById('contact').classList.remove('hide');
+           document.getElementById('blog').classList.remove('hide');
+           
+           document.getElementById('hidden_portfolio_click').click();
+
+      " 
+      class="button_close_style">&times;
+      </span>
+
+      <div style="height:100%;width:100%;"> 
+        <iframe src="" frameborder="0" id="frame03" 
+        style="height: 100vh;
+        width: 100vw;
+        position:fixed;"
+        ></iframe>
+      </div>
+
+      
+       
+      
+    
+    
+   </div>
+  </div>  
+  </div>  
+
+ <div id="portfolio_flex_div" class="portfolio_flex_div" >
+
+
+
+ <div class="portfolio_div_opis">
+ 
+
+ <div class="header_text_style">Portfolio</div>
+
+ 
+ <div class="main_text_style">
+  The materials shared here present  <span style="color: black;font-weight: 500;">  a sample of my programming skills</span>.
+  The first application is an interactive dashboard, the second one is in the form of an online survey, and the third is a website.
+   </div>
+
+   <div class="main_text_style">
+    The examples provided show the capabilities offered by the solutions that I use every day in my work. In terms of technology, 
+    graphical form and intuitiveness.
+     </div>
+  
+
+     
+     <div class="main_text_style">
+      In these applications, the substantive content is only the background, the method of implementation and/or presentation is crucial.       </div>
+    
+    
+
+
+
+</div>
+
+
+
+<!-- portfolio - aplikacje -->
+
+  <div id="portfolio_div_form"  class="portfolio_div_form">
+  
+    <div id="pomoc" style="height: 200px;background-color:transparent;;" class="hide"></div>
+    <div id="pomoc1" class="slider-wrapper" >
+  
+      <div class="slider" id="slider" >
+       
+
+        <div class="slide"  id="slide-1" >
+
+          
+          <div class="on_slide on_slide_place_text_2" style="padding-top: 8%;">
+            <div class="on_slide_subtitle_1" > interactive dashboard </div>
+            Demographic  <br>
+            challenges for  <br>
+             Poland <br>
+            
+            
+             
+            
+          
+  
+          </div>
+          
+  
+      <div >
+  
+        <div class="button_div_play">
+          <button  style="border: none;background-color: transparent;"
+           onclick="
+            document.getElementById('SHOW_APP01').classList.add('show_modal_from_above');
+           document.getElementById('frame01').src = 'https://kamilsesd.shinyapps.io/WyzwaniaDemograficzne/';
+          
+          document.getElementById('close01_click').click();
+          document.getElementById('pomoc').classList.remove('hide');
+           document.getElementById('pomoc1').classList.add('hide');
+            document.getElementById('home').classList.add('hide');
+           document.getElementById('about').classList.add('hide');
+           document.getElementById('offer').classList.add('hide');
+           document.getElementById('contact').classList.add('hide');
+           document.getElementById('blog').classList.add('hide');
+           "
+           >
+           
+         
+          <img src="../img/312964.png"  alt="">
+        
+          </button>
+        </div>
+  
+              <!-- <img  src="../img/pexels-olly-712513.jpg" alt="">         -->
+              <img  src="../img/pexels-shvetsa-3845407_2.jpg" alt="">  
+            
+            </div>   
+              
+            
+      </div>
+
+
+
+
+        <div class="slide"  id="slide-2" >
+          <div class="on_slide on_slide_place_text_2" style="padding-top: 5%;">
+            New sleep supplement
+            <div class="on_slide_subtitle" > online survey questionnaire </div>
+            
+          
+
+          </div>
+          
+  
+      <div >
+  
+        <div class="button_div_play">
+          <button  style="border: none;background-color: transparent;"
+          onclick="
+          
+          
+          document.getElementById('SHOW_APP02').classList.add('show_modal_from_above');
+          document.getElementById('frame02').src = 'https://kamilsesd.shinyapps.io/ElastycznoscCenowaAnkieta';
+          document.getElementById('close02_click').click();
+          document.getElementById('pomoc').classList.remove('hide');
+           document.getElementById('pomoc1').classList.add('hide');
+            document.getElementById('home').classList.add('hide');
+           document.getElementById('about').classList.add('hide');
+           document.getElementById('offer').classList.add('hide');
+           document.getElementById('contact').classList.add('hide');
+           document.getElementById('blog').classList.add('hide');
+
+          
+          " >
+          
+         
+          <img src="../img/312964.png"  alt="">
+        
+          </button>
+        </div>
+
+              <!-- <img  src="../img/pexels-olly-712513.jpg" alt="">         -->
+              <img  src="../img/pexels-pixabay-161449.jpg" alt="">  
+            
+            </div>   
+              
+            
+      </div>
+
+
+
+
+      <div class="slide slide"  id="slide-3" >
+        <div class="on_slide on_slide_place_text_1" style="padding-top: 4%;text-align: center; ">
+         Website
+          
+
+          
+        
+
+        </div>
+        
+
+    <div >
+
+      <div class="button_div_play">
+        <button  style="border: none;background-color: transparent;"
+        onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above');
+         document.getElementById('frame03').src = 'https://www.brass.com.pl/EN/';
+        document.getElementById('close03_click').click();
+        document.getElementById('pomoc').classList.remove('hide');
+           document.getElementById('pomoc1').classList.add('hide');
+          document.getElementById('home').classList.add('hide');
+           document.getElementById('about').classList.add('hide');
+           document.getElementById('offer').classList.add('hide');
+           document.getElementById('contact').classList.add('hide');
+           document.getElementById('blog').classList.add('hide');
+   
+        " >
+        
+       
+        <img src="../img/312964.png"  alt="">
+      
+        </button>
+      </div>
+
+            <!-- <img  src="../img/pexels-olly-712513.jpg" alt="">         -->
+            <!-- <img  src="../img/pexels-olly-3885676.jpg" alt="">   -->
+            <!-- <img  src="../img/pexels-marcus-aurelius-4063530.jpg" alt="">   -->
+            <img  src="../img/sitemap-2488231_1280.jpg" alt="">  
+          </div>   
+            
+          
+    </div>
+  
+    
+        
+ 
+      
+      
+      
+      
+  
+   
+   
+    </div>
+
+    
+   
+<div class="for_slider_nav">
+  <div class="slider_nav">
+      
+
+      
+<input onclick="window.location.href = '#slide-1' ;" type="radio" name="slides" id="radio-1" checked >
+<label for="radio-1"></label>
+
+<input onclick="window.location.href = '#slide-2' ;" type="radio" name="slides" id="radio-2" >
+      <label for="radio-2"></label>
+      
+      <input onclick="window.location.href = '#slide-3' ;" type="radio" name="slides" id="radio-3" >
+      <label for="radio-3"></label>
+      
+      
+  
+  </div>
+  
+  
+</div>
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</div>
+
+
+
+
+
+        </div>
+        
+      </div>
+
+ 
+
+
+
+</section>
+
+
+
+<!-- --------------------------------------- -->
+<!-- EKRAN 2 -strona Kontakt -->
+<!-- --------------------------------------- -->
+
+         
+      
+
+<section id='contact' class="basic_screen_style" style="background-color:#F5F5F5; "> 
+
+
+  <div id="MODAL_NO_SEND" class="mailing_modal show_modal_opacity">
+     
+    <div class="mailing_modal_details">
+      
+      
+    
+      <!-- guzik close -->
+      <span 
+      onclick="document.getElementById('MODAL_NO_SEND').style.display='none'" 
+      class="kontakt_button_close_style">&times;
+      </span>
+      <!-- obraz + komunikat informacyjny -->
+    <div  class="kontakt_comm_info" > 
+      <div>
+        <img src="../img/FAIL.png" height="150px"  alt=""></div>
+      
+      <br>
+      <div >Your message was not delivered, <br> one of the fields was left empty!</div>
+      </div>
+    
+   </div>
+   
+  </div>  
+  
+     <!-- tutaj modal, który zostanie wyświetlony - success -->
+  
+     <div id="MODAL_YES_SEND" class="mailing_modal show_modal_opacity">
+       
+      <div class="mailing_modal_details">
+        
+        
+      
+        <!-- guzik close -->
+        <span 
+        onclick="document.getElementById('MODAL_YES_SEND').style.display='none'" 
+        class="kontakt_button_close_style">&times;
+        </span>
+        <!-- obraz + komunikat informacyjny -->
+      <div  class="kontakt_comm_info" > 
+        <div>
+          <img src="../img/green-checkmark-icon.png" height="150px"  alt=""></div>
+        
+        <br>
+        <div >Your message has been delivered!</div>
+        </div>
+      
+     </div>
+     
+    </div>  
+  
+
+
+
+ <div class="kontakt_flex_div">
+
+
+
+
+ <div class="kontakt_div_opis">
+ 
+
+ <div class="header_text_style">Contact</div>
+
+ 
+ <div class="main_text_style">
+You can contact me:
+   </div>
+   <div class="contact_div">
+   <div class="red_dot">
+   </div>
+   <div style="padding-left: 7px;"> by sending mail on adress: 
+<div style="padding-top:10px;padding-left: 30px;;">
+
+   <a style="text-decoration: none;color: black;font-size: 17px;" href="mailto:kamilsesd@gmail.com">kamilsesd@gmail.com</a>
+     
+   </div>
+ </div>
+ 
+</div>
+
+
+<div style="padding-left: 45px;color: #959480;">
+ or 
+ </div>
+<div class="contact_div">
+ <div class="red_dot">
+ </div>
+ <div style="padding-left: 7px;"> by filling this form
+   
+ </div>
+
+</div>
+
+
+<div class="main_text_style">
+  When using the form, remember to complete all fields. Once the message has been delivered, a confirmation message will appear.
+
+</div>
+
+
+<div class="main_text_style">
+  I respond to all messages promptly.
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+  <!-- FORMULARZ KONTKATU -->
+  
+  <div class="kontakt_div_form">
+  
+    <div class="container_form">  
+            <div class="input-box">
+              
+              <input
+                type="text"
+                class=""
+                id="name"
+                placeholder="name and surname"
+              />
+            </div>
+
+
+            <div class="input-box">
+              
+              <input
+                type="email"
+                class=""
+                id="email"
+                placeholder="email adress"
+              />
+            </div>
+            
+            
+
+            <div class="input-box" >
+              <textarea  id="message" 
+              placeholder="message"></textarea>
+            </div>
+            
+            <div >
+            
+                  <script>
+                    document.getElementById("name").value="";
+                    document.getElementById("email").value="";
+                    document.getElementById("message").value=""
+
+
+                  </script>
+
+
+
+              <button onclick="javascript:sendMail()" class="btn_sub" id="SEND_MAIL" type="button">Send</button>
+
+
+
+
+            </div>
+            
+            
+          </div>
+        </div>
+        
+
+
+ 
+      </div>
+    
+
+
+</section>
+
+
+
+
+
+<!-- blog -->
+
+<section id='blog' class="basic_screen_style" style="background-color:rgb(32,32,32,0.35  ) "> 
+
+  
+
+  <div class="place_for_full_page_video" style="z-index: 1; display:block;position: absolute; min-height: 100vh;
+  
+  ">
+
+  
+
+<div class="color_as_back"></div>    
+   
+    <!-- <img src="../img/pexels-padrinan-1591056_2.jpg" alt=""> -->
+    <!-- <img src="../img/pexels-a-darmel-7641994.jpg" alt="">
+      -->
+   <!-- <img src="../img/pexels-bclarkphoto-21492.jpg" alt=""> -->
+   <!-- <img src="../img/pexels-cottonbro-6803527.jpg" alt=""> -->
+   <!-- <img src="../img/pexels-pavel-danilyuk-6716003_3.jpg" alt=""> -->
+   <img src="../img/pexels-cottonbro-6803527_3.jpg" alt="">
+   
+      
+<!-- w tym miejscu blog -->
+
+<div id="SHOW_BLOG001" class="job_offer_modal">
+      
+   <div class="place_for_full_page_video"  >
+
+    
+<div class="color_as_back2"></div>    
+   
+    <img src="../img/pexels-bclarkphoto-21492.jpg" alt="">
+  
+      </div>    
+
+  <div class="job_offer_modal_details" >
+  <div style="height: 100%;">
+    
+    
+  
+    
+    <span onclick="document.getElementById('SHOW_BLOG001').classList.remove('show_modal_from_above')" 
+
+    class="button_close_style">&times;
+    </span>
+
+    <div style="height:100%;width:100%; ;;justify-content: center;
+    align-items: center;display: flex;flex-wrap: wrap;
+    " >
+
+
+
+      <div class="blog_main_scr" >
+        <div class="blog_main_scr_all_text">
+  <div class="blog_main_scr_all_text_1">
+    <span class="blog_main_scr_all_text_title" >What data tells</span>  
+  <span class="blog_main_scr_all_text_title" >about my blog?</span>  
+  </div>
+
+
+  <div class="blog_main_scr_all_text_1">
+   <div class="blog_main_scr_all_text_main" >
+   
+  <div style="margin-top:4px ;">
+    The blog is a try to build something that I like to read (browse), 
+    and there is definitely not enough of it on the Polish Internet.
+     A relatively loose format in which data is an excuse to draw attention to a topic,
+      which is missed by public eye and which is,
+       to use language former coach of the Polish football team, extremely important.
+   </div> 
+   <div style="margin-top:4px ;">
+    I do not intend to create dissertations,
+     my goal is not even to provide an comprehensive description of the changes taking place in society.
+      I would like only to present a handful of interesting information and synthesize it. Based on publicly available data.
+        Without complicated conceptual framework and methodological intricacies, 
+        but in a way that is understandable to everyone and attractive to the eye.
+   </div>
+    
+   <div style="margin-top:4px ;">
+    Posts will have different forms.
+     Sometimes this will be a videoblog, other times it will be an analytical dashboard with a description.
+      I intend to play with form and conventions. Will I succeed? Time will tell :)
+    
+   </div>
+
+
+
+    </div> 
+    </div>
+
+
+</div>
+      </div>
+
+
+      
+    </div>
+  
+  
+ </div>
+</div>  
+</div> 
+  
+
+<div id="SHOW_BLOG002" class="job_offer_modal">
+      
+  <div class="place_for_full_page_video"  >
+
+   
+<div class="color_as_back2"></div>    
+  
+    <img src="../img/pexels-bclarkphoto-21492.jpg" alt="">
+ 
+     </div>    
+
+ <div class="job_offer_modal_details" >
+ <div style="height: 100%;">
+   
+   
+ 
+   
+   <span onclick="document.getElementById('SHOW_BLOG002').classList.remove('show_modal_from_above')" 
+
+   class="button_close_style">&times;
+   </span>
+
+   <div style="height:100%;width:100%; ;;justify-content: center;
+   align-items: center;display: flex;flex-wrap: wrap;
+   " >
+
+
+
+     <div class="blog_main_scr" >
+       <div class="blog_main_scr_all_text">
+ <div class="blog_main_scr_all_text_1">
+   <span class="blog_main_scr_all_text_title" >Co mówią dane</span>  
+ <span class="blog_main_scr_all_text_title" >o aspiracjach edukacyjnych Polaków?</span>  
+ </div>
+
+
+ <div class="blog_main_scr_all_text_1">
+  <div class="blog_main_scr_all_text_main" >
+  
+ <div style="margin-top:4px ;">
+   W pierwszym odcinku bardzo ważny temat i bardzo nietypowa forma prezentacji.
+   Polecam, jeśli ciekawi Cię a) co charakteryzuje polskie społeczeństwo pod względem edukacji lub b) jak wygląda data storytelling...na świeżym powietrzu:).
+  </div> 
+   
+  <div style="margin-top:4px ;">
+   <span class="link_blog"> <a target="_blank" href="https://www.youtube.com/watch?v=cMsEGrngO3w"> Całość do obejrzenia tu!  </a>  </span> 
+  
+</div>
+  
+
+  
+
+
+
+   </div> 
+   </div>
+
+
+</div>
+     </div>
+
+
+     
+   </div>
+ 
+ 
+</div>
+</div>  
+</div> 
+  
+    <!-- kafelki z programami -->
+ 
+ 
+    <div class="con_programy">
+      <div class="program_page_title"> Blog </div>
+      <div class="program_page_subtitle"> What data tells? </div>
+      
+ 
+ 
+ <!-- ---------------------------------------- -->
+ <!-- Pierwszy kafalek = PROGRAM 1 -->
+ <!-- ---------------------------------------- -->
+ 
+<!--   <div  class="kafelek" onclick="document.getElementById('SHOW_BLOG002').classList.add('show_modal_from_above')" >
+                 
+  <div class="program_kafelek_text">
+  
+    
+    <div  class="program_data"> 
+      8 marca 2025
+   </div>
+
+
+
+   <div  style="font-family: 'Courier New', Courier, monospace;
+    font-size: 35px; 
+     display: flex;
+      text-align: center;
+       align-items: baseline;
+       justify-content:center;
+        margin-top: 20px;
+        /* background-color: rgba(44, 233, 227, 0.22); */
+        ">  
+        #1
+        <br>
+    O aspiracjach
+   
+   <br>
+   edukacyjnych
+   
+   <br>
+   Polaków
+
+    </div>
+  
+
+  </div>
+
+
+
+
+</div>  -->
+
+ <div  class="kafelek" onclick="document.getElementById('SHOW_BLOG001').classList.add('show_modal_from_above')" >
+                 
+               <div class="program_kafelek_text">
+               
+                 
+                 <div  class="program_data"> 
+                  November 22, 2024
+
+                </div>
+           
+ 
+ 
+
+                <div  style="font-family: 'Courier New', Courier, monospace;
+                font-size: 35px; 
+                 display: flex;
+                  text-align: center;
+                   align-items: baseline;
+                   justify-content:center;
+                    margin-top: 30px;
+                    /* background-color: rgba(44, 233, 227, 0.22); */
+               
+               ">  
+                 #0
+                 <br>
+                About               
+               <br>
+               my blog
+               
+            
+                </div>
+              
+
+
+               
+           
+               </div>
+
+         
+             
+           
+           </div>
+         
+ 
+</div> 
+
+
+
+</div> 
+
+
+</section>
+
+
+
+</body>
+</html>
