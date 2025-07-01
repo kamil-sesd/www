@@ -3,15 +3,22 @@
 <head>
       <!-- podstawowe informacje  -->
     <meta charset="UTF-8">
-    <title>Kamil Sapała – R Programmer, Data Analyst, Sociologist</title>
-    <meta name="description" content="I specialize in data processing, automation, complex analysis and reporting.">
+    <title>Kamil Sapała – Programista R, Specjalista od danych, Socjolog  </title>
+    <meta name="description" content="Specjalizuję się w automatyzacji procesów przetwarzania danych, złożonych analizach i raportowaniu.">
     <meta name="keywords" content="Shiny,HTML,CSS,JavaScript">
     <meta name="author" content="Kamil Sapała">
     <meta name="viewport" content="width-device-width, initial-scale=1"> 
     
 
      <!-- dadanie favicon'a -->
-     <link rel="icon" href="../img/image2.png" type="image/x-icon">
+      
+     <link rel="icon" href="img/icon_ico.ico" type="image/x-icon">
+
+     <link rel="icon" type="image/png" sizes="32x32" href="img/icon_32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="img/icon_16.png">
+
+     
+     <link rel="apple-touch-icon" sizes="180x180" href="img/icon_180.png">
      
     <link rel="stylesheet" href="css/style.css">
      <!-- <script type="application/html-dependencies">json2[2014.02.04];jquery[3.4.1];shiny[1.4.0.2];bootstrap[3.4.1]</script> -->
@@ -21,7 +28,7 @@
 
     
 
-    <script src="../js/SendMail.js"></script>
+    <script src="js/SendMail.js"></script>
 
     <script
       type="text/javascript"
@@ -197,8 +204,8 @@ window.addEventListener("load", function () {
                     <li>
 
                       <a class="change_img_home"  onclick="javascript:document.getElementById('active').checked = false;"  href="#home" title="">
-                        <img src="../img/HOME2.png"   height="21px"/>
-                            <img src="../img/HOME.png" height="21px" hidden>
+                        <img src="img/HOME2.png"   height="21px"/>
+                            <img src="img/HOME.png" height="21px" hidden>
                       </a>
 
                       
@@ -208,13 +215,13 @@ window.addEventListener("load", function () {
                </div>
                <div class = 'nav_list_item'>
                 <li>
-                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#about" title="">About me </a>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#about" title="">O mnie </a>
                 </li>           
               </div>
 
               <div class = 'nav_list_item'>
                 <li>
-                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#offer" title="">Hire me </a>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#offer" title="">Oferta </a>
                 </li>           
               </div>
 
@@ -222,14 +229,18 @@ window.addEventListener("load", function () {
 
               <div class = 'nav_list_item'>
                 <li>
-                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#portfolio" title="">Portfolio  </a>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#portfolio" title="">portfolio  </a>
                 </li>           
               </div>
               <div class = 'nav_list_item'>
                 <li>
-                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#contact" title="">Contact </a>
+                  <a onclick="javascript:document.getElementById('active').checked = false;"  href="#contact" title="">Kontakt </a>
                 </li>           
               </div>
+
+              <div style="position: fixed;z-index: 10;margin-top: -62px;margin-left: 200px;">
+                      <a href="#home"> <img style="cursor: pointer; height: 25px;" src="img/linkedin-app-icon.png" alt=""> </a>
+                    </div>
 
               <div class = 'nav_list_item'>
                 <li>
@@ -244,6 +255,7 @@ window.addEventListener("load", function () {
               </div> -->
                
            </ul>
+           
            
           
           </div>
@@ -290,16 +302,25 @@ window.addEventListener("load", function () {
         <div class="hide_menu_upp" >
         <ul class="navbar_styl" >
           <li style="margin-top: -2px !important;;margin-right: -10px !important;">  <a href="#" class="change_img_home"> 
-            <img src="../img/HOME2.png"   height="21px"/>
-              <img src="../img/HOME.png" height="21px" hidden >
+            <img src="img/HOME2.png"   height="21px"/>
+              <img src="img/HOME.png" height="21px" hidden >
                 
           </a></li>
-            <li><a href="#about"> About me </a></li>
+            <li><a href="#about"> O mnie </a></li>
             
-            <li><a href="#offer">Hire me</a></li>
+            <li><a href="#offer">Oferta</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             
-            <li><a  href="#contact">Contact</a></li>
+            <li><a  href="#contact">Kontakt</a></li>
+
+             <li><a  href="#contact">
+      
+                  <img style="margin-top: -2px; width: 27px;" src="img/linkedin-app-icon.png" alt="">
+
+             </a></li>
+          
+
+
             <li><a href="#blog"> <span class="blog_in_menu">Blog</span>   </a></li>
           </ul>
         </div>
@@ -318,17 +339,17 @@ window.addEventListener("load", function () {
 
   <div>
 
-<div id="nag_tit" class="con_main_text_haslo" > What data tells?</div>
+<div id="nag_tit" class="con_main_text_haslo" > Co mówią dane?</div>
 
 <div style="padding-bottom: 10px;">
-  This is a key question that I answer every day in my work.
-   I am an R programmer - a specialist in data processing, analysis and visualization.
-    Sociological background makes that I work mainly in the area of market and social research.
+  To kluczowe pytanie, na które w swojej pracy odpowiadam codziennie.
+   Jestem programistą R - specjalistą od przetwarzania, analiz i wizualizacji danych.
+   Socjologiczne przygotowanie sprawia, że głównie w 
+   obszarze badań rynku i opinii społecznej.
   </div>
   <div>
-    I believe that data allows us not only to make key decisions in business, 
-    but above all to notice and understand the changes taking place in the economy, culture and society.
-    
+   Wierzę, że dane pozwalają nam nie tylko podejmować kluczowe decyzje w biznesie, ale przede wszystkim dostrzegać zachodzące zmiany i je rozumieć
+    - zarówno te w gospodarce, kulturze jak i społeczeństwie.
   </div>
   
 <div class="podpis" >Kamil Sapała</div>
@@ -343,7 +364,7 @@ window.addEventListener("load", function () {
 <div class="place_for_full_page_video">
 
   <video preload="yes"  autoplay muted loop playsinline >
-   <source src="../videos/EXAMPLE19.mp4" type="video/mp4" />
+   <source src="videos/EXAMPLE19.mp4" type="video/mp4" />
    
    
  </video>
@@ -374,25 +395,19 @@ window.addEventListener("load", function () {
     <div class="margin_1" >
     
     
-    <div class="header_text_style">About me
+    <div class="header_text_style">O mnie
   
     </div>
   
     
     <div class="main_text_style">
-      I specialize in the automation of data processing, advanced analysis and reporting.
-      I have been professionally involved in data analysis since 2014.
-      
-      I have worked for companies in the research, cybersecurity,
-      HR analytics and also in public institutions.
-      
+      Specjalizuję się w automatyzacji procesów przetwarzania danych, złożonych analizach i raportowaniu.
+      <br>
+      Od 2014 roku jestem zawodowo związany z analizą danych. W tym czasie pracowałem dla firm z branży badawczej, cybersecurity, analityki HR, instytucji publicznych i organizacji pozarządowych. 
       <div style="margin-top: 5px;">
-        The tools I use on a daily basis are R, Shiny, HTML, CSS, JavaScript.
-
-        I find the most satisfaction in projects in which results are reported
-        in the form of applications/interactive dashboards.
-        These are tailored Business Intelligence solutions.
-        
+      Podstawowe narzędzia, z których na co dzień korzystam to język R, Shiny, HTML, CSS, JavaScript.
+      Najwięcej satysfakcji sprawiają mi projekty, w których raportowanie wyników ma formę aplikacji/interaktywnych dashboardów.
+       Są to rozwiązania Business Intelligence szyte na miarę.
       </div>
       
   
@@ -404,12 +419,10 @@ window.addEventListener("load", function () {
 </div>
 
     <div class="main_text_style" style="margin-top: -5px;">
-      What sets me apart is my commitment, reliability, enthusiasm and ability to recognize needs.
-
-      If this description interests you, check out my  
-
-      <span class="omnie_hiperlink"><a href="#offer">offer</a></span><!--
-      --><span > and sample applications that I have posted in the 
+      Wyróżnia mnie zaangażowanie, rzetelność, entuzjazm i umiejętność rozpoznawania potrzeb.
+      Jeśli ten opis Cię zainteresował sprawdź moją 
+      <span class="omnie_hiperlink"><a href="#offer">ofertę</a></span><!--
+      --><span > i przykładowe aplikacje, które zamieściłem w zakładce 
       
         <span class="omnie_hiperlink"><a href="#portfolio">portfolio</a></span><!--
         --><span >. 
@@ -431,7 +444,7 @@ window.addEventListener("load", function () {
     
     <div class="omnie_foto_element_div">
         
-      <img  src="../img/PS22.jpeg" alt="">
+      <img  src="img/PS23.jpeg" alt="">
     </div>
     
     </div>
@@ -460,11 +473,11 @@ window.addEventListener("load", function () {
 
  <div class="nag_oferta_con" >
 
- <div class="nag_oferta_title" >Offer</div>
+ <div class="nag_oferta_title" >Oferta</div>
 
 
  <div class="nag_oferta_subtitle" >
-  Areas in which I use my knowledge, experience and skills on a daily basis
+  Obszary, w których na co dzień wykorzystuję swoją wiedzę, doświadczenie i umiejętności
    </div>
 
 
@@ -488,14 +501,15 @@ window.addEventListener("load", function () {
 
             <!-- nazwa dziedzina -->    
                 <div  class="oferta_dziedzina"> 
-                  DATA ANALYSIS
+                ANALIZA DANYCH
                </div>
           
 
                <!-- dziedzina opis -->
                <div class="oferta_opis">  
-                From explorating data, through processing automation and building advanced models,
-                 to presentation of results on understandable visualizations.
+                Od eksploracji danych, po 
+                automatyzację przetwarzania, 
+                budowę zaawansowanych modeli, optymalizację procesów i prezentację wyników w postaci zrozumiałych wizualizacji.
 
                 </div>
           
@@ -516,14 +530,14 @@ window.addEventListener("load", function () {
 
             <!-- nazwa dziedzina -->    
                 <div  class="oferta_dziedzina"> 
-                BUILDING APPS
+                TWORZENIE APLIKACJI
                </div>
           
 
                <!-- dziedzina opis -->
                <div class="oferta_opis">  
-                Using commonly used technologies (html, css, JavaScript, R). 
-                From ordinary websites to dashboards and complex interactive analytical applications, including those operating in real time.
+                Przy użyciu powszechnie stosowanych technologii (html, css, JavaScript, R).
+                Od zwykłych stron internetowych po dashboardy i złożone interaktywne aplikacje analityczne, w tym także te działające w czasie rzeczywistym.
                 </div>
           
           </div>
@@ -545,15 +559,16 @@ window.addEventListener("load", function () {
 
             <!-- nazwa dziedzina -->    
                 <div  class="oferta_dziedzina"> 
-                  MARKET RESEARCH
+                BADANIA RYNKU
                </div>
           
+               
 
                <!-- dziedzina opis -->
                <div class="oferta_opis">  
-                Using quantitative methods. From creating questionnaires, 
-                to scripts for conducting online survey, 
-                preparing report and its presentation.
+                Z wykorzystaniem metod ilościowych. Od tworzenia kwestionariuszy, po 
+                skrypty do realizacji badań on-line,
+                przygotowanie raportów i ich prezentację.
                 </div>
           
           </div>
@@ -567,15 +582,14 @@ window.addEventListener("load", function () {
           
                       <!-- nazwa dziedzina -->    
                           <div  class="oferta_dziedzina"> 
-                          DESK RESEARCH
+                            DESK RESEARCH
                          </div>
                     
           
                          <!-- dziedzina opis -->
                          <div class="oferta_opis">  
-                          I collect, verify, evaluate, analyze and interpret publicly available data,
-                            that can be downloaded directly, but also data that requires the use of methods that
-                             automate the download process (e.g. web scraping).
+                          Zbieram, weryfikuję, poddaję ocenie, analizie i interpretacji publicznie dostępne dane. 
+                          Zarówno te możliwe do pobrania wprost, jak i te wymagające wykorzystania metod automatyzujących proces (np. web-scrapping).
                           <!-- Na <a href="#blog">blogu</a> nietypowa próbka. -->
 
                           </div>
@@ -595,14 +609,19 @@ window.addEventListener("load", function () {
           
                          <!-- dziedzina opis -->
                          <div class="oferta_opis">  
-                          I translate data into stories that everyone can understand.
-                           By placing data in appropriate contexts I create narrative and discover the unknown or previously imperceptible.
+                          Przekładam dane na zrozumiałe dla każdego opowiadania.  
+                          Osadzając dane we właściwych kontekstach tworzę narracje, odkrywam nieznane lub wcześniej niedostrzegalne. 
                           <!-- Na <a href="#blog">blogu</a> nietypowa próbka. -->
 
                           </div>
                     
                     </div>
           
+
+ 
+                    
+
+
 
 
                     <div class="oferta_kafelek">
@@ -612,14 +631,14 @@ window.addEventListener("load", function () {
                     
                                 <!-- nazwa dziedzina -->    
                                     <div  class="oferta_dziedzina"> 
-                                      CONSULTING
+                                    KONSULTING
                                    </div>
                               
                     
                                    <!-- dziedzina opis -->
                                    <div class="oferta_opis">  
-                                    
-                                    I advise on both strategic and technical issues. Wherever the goal is to discover knowledge from data.
+                                    Doradzam zarówno w przypadku zagadnień o charakterze strategicznym, jak i technicznym.  
+                                  Wszędzie tam, gdzie celem jest odkrywanie wiedzy płynącej z danych. 
                                   
                                     </div>
                               
@@ -796,19 +815,20 @@ window.addEventListener("load", function () {
 
  
  <div class="main_text_style">
-  The materials shared here present  <span style="color: black;font-weight: 500;">  a sample of my programming skills</span>.
-  The first application is an interactive dashboard, the second one is in the form of an online survey, and the third is a website.
+  Udostępnione tu materiały prezentują  <span style="color: black;font-weight: 500;"> próbkę moich programistycznych umiejętności</span>. Pierwsza aplikacja ma formę interaktywnego dashboardu, 
+  druga ma postać ankiety on-line, natomiast trzecia to strona internetowa. 
    </div>
 
    <div class="main_text_style">
-    The examples provided show the capabilities offered by the solutions that I use every day in my work. In terms of technology, 
-    graphical form and intuitiveness.
+    Zamieszczone przykłady eksponują możliwości, jakie dają rozwiązania, z których na co dzień w swojej pracy korzystam, zarówno pod względem technologicznym, 
+    formy graficznej jak i intuicyjności.  
      </div>
   
 
      
      <div class="main_text_style">
-      In these applications, the substantive content is only the background, the method of implementation and/or presentation is crucial.       </div>
+      W  tych aplikacjach treści merytoryczne stanowią jedynie tło, kluczowy jest sposób realizacji i/lub prezentacji. 
+       </div>
     
     
 
@@ -832,13 +852,11 @@ window.addEventListener("load", function () {
 
           
           <div class="on_slide on_slide_place_text_2" style="padding-top: 8%;">
-            <div class="on_slide_subtitle_1" > interactive dashboard </div>
-            Demographic  <br>
-            challenges for  <br>
-             Poland <br>
+            <div class="on_slide_subtitle_1" > interaktywny dashboard </div>
+            Demograficzne <br>
+            wyzwania dla <br>
+            Polski <br>
             
-            
-             
             
           
   
@@ -865,13 +883,13 @@ window.addEventListener("load", function () {
            >
            
          
-          <img src="../img/312964.png"  alt="">
+          <img src="img/312964.png"  alt="">
         
           </button>
         </div>
   
-              <!-- <img  src="../img/pexels-olly-712513.jpg" alt="">         -->
-              <img  src="../img/pexels-shvetsa-3845407_2.jpg" alt="">  
+              <!-- <img  src="img/pexels-olly-712513.jpg" alt="">         -->
+              <img  src="img/pexels-shvetsa-3845407_2.jpg" alt="">  
             
             </div>   
               
@@ -883,8 +901,8 @@ window.addEventListener("load", function () {
 
         <div class="slide"  id="slide-2" >
           <div class="on_slide on_slide_place_text_2" style="padding-top: 5%;">
-            New sleep supplement
-            <div class="on_slide_subtitle" > online survey questionnaire </div>
+            Suplement diety na sen
+            <div class="on_slide_subtitle" > kwestionariusz ankiety on-line </div>
             
           
 
@@ -913,13 +931,13 @@ window.addEventListener("load", function () {
           " >
           
          
-          <img src="../img/312964.png"  alt="">
+          <img src="img/312964.png"  alt="">
         
           </button>
         </div>
 
-              <!-- <img  src="../img/pexels-olly-712513.jpg" alt="">         -->
-              <img  src="../img/pexels-pixabay-161449.jpg" alt="">  
+              <!-- <img  src="img/pexels-olly-712513.jpg" alt="">         -->
+              <img  src="img/pexels-pixabay-161449.jpg" alt="">  
             
             </div>   
               
@@ -931,7 +949,7 @@ window.addEventListener("load", function () {
 
       <div class="slide slide"  id="slide-3" >
         <div class="on_slide on_slide_place_text_1" style="padding-top: 4%;text-align: center; ">
-         Website
+         Strona internetowa
           
 
           
@@ -945,7 +963,7 @@ window.addEventListener("load", function () {
       <div class="button_div_play">
         <button  style="border: none;background-color: transparent;"
         onclick="document.getElementById('SHOW_APP03').classList.add('show_modal_from_above');
-         document.getElementById('frame03').src = 'https://www.brass.com.pl/EN/';
+         document.getElementById('frame03').src = 'https://www.brass.com.pl';
         document.getElementById('close03_click').click();
         document.getElementById('pomoc').classList.remove('hide');
            document.getElementById('pomoc1').classList.add('hide');
@@ -958,15 +976,15 @@ window.addEventListener("load", function () {
         " >
         
        
-        <img src="../img/312964.png"  alt="">
+        <img src="img/312964.png"  alt="">
       
         </button>
       </div>
 
-            <!-- <img  src="../img/pexels-olly-712513.jpg" alt="">         -->
-            <!-- <img  src="../img/pexels-olly-3885676.jpg" alt="">   -->
-            <!-- <img  src="../img/pexels-marcus-aurelius-4063530.jpg" alt="">   -->
-            <img  src="../img/sitemap-2488231_1280.jpg" alt="">  
+            <!-- <img  src="img/pexels-olly-712513.jpg" alt="">         -->
+            <!-- <img  src="img/pexels-olly-3885676.jpg" alt="">   -->
+            <!-- <img  src="img/pexels-marcus-aurelius-4063530.jpg" alt="">   -->
+            <img  src="img/sitemap-2488231_1280.jpg" alt="">  
           </div>   
             
           
@@ -1061,10 +1079,10 @@ window.addEventListener("load", function () {
       <!-- obraz + komunikat informacyjny -->
     <div  class="kontakt_comm_info" > 
       <div>
-        <img src="../img/FAIL.png" height="150px"  alt=""></div>
+        <img src="img/FAIL.png" height="150px"  alt=""></div>
       
       <br>
-      <div >Your message was not delivered, <br> one of the fields was left empty!</div>
+      <div >Twoja wiadomość nie została dostarczona, <br> jedno z pól pozostało puste!</div>
       </div>
     
    </div>
@@ -1087,10 +1105,10 @@ window.addEventListener("load", function () {
         <!-- obraz + komunikat informacyjny -->
       <div  class="kontakt_comm_info" > 
         <div>
-          <img src="../img/green-checkmark-icon.png" height="150px"  alt=""></div>
+          <img src="img/green-checkmark-icon.png" height="150px"  alt=""></div>
         
         <br>
-        <div >Your message has been delivered!</div>
+        <div >Twoja wiadomość została dostarczona!</div>
         </div>
       
      </div>
@@ -1108,16 +1126,16 @@ window.addEventListener("load", function () {
  <div class="kontakt_div_opis">
  
 
- <div class="header_text_style">Contact</div>
+ <div class="header_text_style">Kontakt</div>
 
  
  <div class="main_text_style">
-You can contact me:
+   Aby się ze mną skontaktować możesz:
    </div>
    <div class="contact_div">
    <div class="red_dot">
    </div>
-   <div style="padding-left: 7px;"> by sending mail on adress: 
+   <div style="padding-left: 7px;padding-bottom: 5px;"> wysłać maila na adres: 
 <div style="padding-top:10px;padding-left: 30px;;">
 
    <a style="text-decoration: none;color: black;font-size: 17px;" href="mailto:kamilsesd@gmail.com">kamilsesd@gmail.com</a>
@@ -1128,13 +1146,29 @@ You can contact me:
 </div>
 
 
-<div style="padding-left: 45px;color: #959480;">
- or 
+<div class="contact_div">
+  
+ <div class="red_dot">
  </div>
+ <div style="padding-left: 7px;"> napisać na portalu 
+   
+ </div>
+ <a href="#home"> <img style="margin-left: 5px; margin-top: -3px;; height: 23px;" src="img/linkedin-app-icon.png" alt="">
+  </a>
+
+
+ 
+</div>
+
+
+<div style="padding-left: 45px;color: #959480;padding-top: 8px;">
+ lub
+ </div>
+
 <div class="contact_div">
  <div class="red_dot">
  </div>
- <div style="padding-left: 7px;"> by filling this form
+ <div style="padding-left: 7px;"> wypełnienić zamieszczony formularz
    
  </div>
 
@@ -1142,14 +1176,13 @@ You can contact me:
 
 
 <div class="main_text_style">
-  When using the form, remember to complete all fields. Once the message has been delivered, a confirmation message will appear.
+Korzystając z formularza pamiętaj, aby uzupełnić wszystkie pola. Gdy wiadomość zostanie dostarczona pojawi się komunikat potwierdzający.
 
 </div>
 
 
 <div class="main_text_style">
-  I respond to all messages promptly.
-
+ Na wszystkie wiadomości odpowiadam na bieżąco.
 
 </div>
 
@@ -1174,7 +1207,7 @@ You can contact me:
                 type="text"
                 class=""
                 id="name"
-                placeholder="name and surname"
+                placeholder="imię i nazwisko"
               />
             </div>
 
@@ -1185,7 +1218,7 @@ You can contact me:
                 type="email"
                 class=""
                 id="email"
-                placeholder="email adress"
+                placeholder="adres mailowy"
               />
             </div>
             
@@ -1193,7 +1226,7 @@ You can contact me:
 
             <div class="input-box" >
               <textarea  id="message" 
-              placeholder="message"></textarea>
+              placeholder="wiadomość"></textarea>
             </div>
             
             <div >
@@ -1208,7 +1241,7 @@ You can contact me:
 
 
 
-              <button onclick="javascript:sendMail()" class="btn_sub" id="SEND_MAIL" type="button">Send</button>
+              <button onclick="javascript:sendMail()" class="btn_sub" id="SEND_MAIL" type="button">Wyślij</button>
 
 
 
@@ -1246,13 +1279,13 @@ You can contact me:
 
 <div class="color_as_back"></div>    
    
-    <!-- <img src="../img/pexels-padrinan-1591056_2.jpg" alt=""> -->
-    <!-- <img src="../img/pexels-a-darmel-7641994.jpg" alt="">
+    <!-- <img src="img/pexels-padrinan-1591056_2.jpg" alt=""> -->
+    <!-- <img src="img/pexels-a-darmel-7641994.jpg" alt="">
       -->
-   <!-- <img src="../img/pexels-bclarkphoto-21492.jpg" alt=""> -->
-   <!-- <img src="../img/pexels-cottonbro-6803527.jpg" alt=""> -->
-   <!-- <img src="../img/pexels-pavel-danilyuk-6716003_3.jpg" alt=""> -->
-   <img src="../img/pexels-cottonbro-6803527_3.jpg" alt="">
+   <!-- <img src="img/pexels-bclarkphoto-21492.jpg" alt=""> -->
+   <!-- <img src="img/pexels-cottonbro-6803527.jpg" alt=""> -->
+   <!-- <img src="img/pexels-pavel-danilyuk-6716003_3.jpg" alt=""> -->
+   <img src="img/pexels-cottonbro-6803527_3.jpg" alt="">
    
       
 <!-- w tym miejscu blog -->
@@ -1264,7 +1297,7 @@ You can contact me:
     
 <div class="color_as_back2"></div>    
    
-    <img src="../img/pexels-bclarkphoto-21492.jpg" alt="">
+    <img src="img/pexels-bclarkphoto-21492.jpg" alt="">
   
       </div>    
 
@@ -1288,8 +1321,8 @@ You can contact me:
       <div class="blog_main_scr" >
         <div class="blog_main_scr_all_text">
   <div class="blog_main_scr_all_text_1">
-    <span class="blog_main_scr_all_text_title" >What data tells</span>  
-  <span class="blog_main_scr_all_text_title" >about my blog?</span>  
+    <span class="blog_main_scr_all_text_title" >Co mówią dane</span>  
+  <span class="blog_main_scr_all_text_title" >o moim blogu?</span>  
   </div>
 
 
@@ -1297,24 +1330,23 @@ You can contact me:
    <div class="blog_main_scr_all_text_main" >
    
   <div style="margin-top:4px ;">
-    The blog is a try to build something that I like to read (browse), 
-    and there is definitely not enough of it on the Polish Internet.
-     A relatively loose format in which data is an excuse to draw attention to a topic,
-      which is missed by public eye and which is,
-       to use language former coach of the Polish football team, extremely important.
+    Blog jest próbą zbudowania czegoś, co sam lubię czytać (przeglądać),
+    a czego w polskim Internecie jest zdecydowanie za mało. 
+    W miarę luźnego formatu, w którym dane stanowią pretekst do zwrócenia uwagi na zjawisko,
+    które umyka opinii publicznej, a które jest, używając języka
+     byłego selekcjonera polskiej kadry piłkarskiej, szalenie ważne.
    </div> 
    <div style="margin-top:4px ;">
-    I do not intend to create dissertations,
-     my goal is not even to provide an comprehensive description of the changes taking place in society.
-      I would like only to present a handful of interesting information and synthesize it. Based on publicly available data.
-        Without complicated conceptual framework and methodological intricacies, 
-        but in a way that is understandable to everyone and attractive to the eye.
+    Nie zamierzam tworzyć rozpraw, moim celem nie jest nawet wyczerpujący opis
+        zachodzących w społeczeństwie zmian. Chciałbym jedynie, odwołując się do powszechnie dostępnych danych,
+          przedstawić garść ciekawych informacji i dokonać ich syntezy. Bez skomplikowanego aparatu pojęciowego
+           i metodologicznych zawiłości,
+            za to w sposób zrozumiały dla każdego i w ładnym „opakowaniu”. 
    </div>
     
    <div style="margin-top:4px ;">
-    Posts will have different forms.
-     Sometimes this will be a videoblog, other times it will be an analytical dashboard with a description.
-      I intend to play with form and conventions. Will I succeed? Time will tell :)
+    Wpisy będą miały różną formę. Czasem będzie to videoblog, innym razem dashboard analityczny z opisem. 
+    Zamierzam bawić się formą i grać z konwencjami. Czy mi się uda? Czas pokaże :)
     
    </div>
 
@@ -1337,14 +1369,14 @@ You can contact me:
 </div> 
   
 
-<div id="SHOW_BLOG002" class="job_offer_modal">
+<!-- <div id="SHOW_BLOG002" class="job_offer_modal">
       
   <div class="place_for_full_page_video"  >
 
    
 <div class="color_as_back2"></div>    
   
-    <img src="../img/pexels-bclarkphoto-21492.jpg" alt="">
+    <img src="img/pexels-bclarkphoto-21492.jpg" alt="">
  
      </div>    
 
@@ -1405,14 +1437,14 @@ You can contact me:
  
 </div>
 </div>  
-</div> 
+</div>  -->
   
     <!-- kafelki z programami -->
  
  
     <div class="con_programy">
       <div class="program_page_title"> Blog </div>
-      <div class="program_page_subtitle"> What data tells? </div>
+      <div class="program_page_subtitle"> Co mówią dane? </div>
       
  
  
@@ -1466,8 +1498,7 @@ You can contact me:
                
                  
                  <div  class="program_data"> 
-                  November 22, 2024
-
+                   22 listopada 2024
                 </div>
            
  
@@ -1485,9 +1516,10 @@ You can contact me:
                ">  
                  #0
                  <br>
-                About               
+                O moim
+               
                <br>
-               my blog
+               blogu
                
             
                 </div>
