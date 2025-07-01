@@ -24,13 +24,17 @@
 
 .blog_in_menu{
 
-  background-color: #548A8C;
+  /* background-color: #548A8C; */
+  /* background-color: rgb(84, 138, 140, 0.5); */
   /* background-color:#D52BDE; */
   padding-left:10px ;
   padding-right: 10px;
   padding-top: 7px;
   padding-bottom: 7px;
   color: white;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 2px;
 
 }
 
