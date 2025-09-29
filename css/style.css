@@ -38,9 +38,6 @@
 
 }
 
-
-
-
 /* zmiany ikony home w menu */
 
 
@@ -2290,8 +2287,6 @@ animation:show_modal_opacity_effect 0.4s
 
 
 
-   
-
 
 
       .blog_main_scr{
@@ -2318,21 +2313,30 @@ animation:show_modal_opacity_effect 0.4s
       }
 
 
-      .blog_main_scr_all_text_title{
+  .blog_main_scr_all_text_title{
          
         background-color: #E8E8E8;
         font-size: 45px;
-        padding: 5px;
+        
+        padding-left: 8px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: left;
+        position:relative;
       }
 
       .blog_main_scr_all_text_main{
-        padding: 10px; 
+        padding: 15px; 
         background-color: #E8E8E8;
-        font-size: 3.5vh;
+        font-size: 3.0vh;
         overflow-y:auto;
-        max-height: 80vh;
+        max-height: 60vh;
         font-family:Calibri;
         color: rgba(0,0,0,0.40);
+        /* padding-left: 20px !important; */
         
         
       }
@@ -2534,4 +2538,21 @@ color: #548A8C;
   ;
   }
   
-  
+
+
+/* blog nowości 16.09.2025 */
+
+.blog_par{
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.blog_par_title{
+margin-top:18px ;
+font-weight: bold;
+color: rgb(0, 0, 0, 0.8);
+}
+
+.blog_highlight{
+background-color: burlywood;
+}
