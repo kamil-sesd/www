@@ -4,6 +4,46 @@
 /* BEZ ZAKŁADKI - CO UŻYWAM W WIELU MIEJSCACH */
 /* ----------------------------------------------------- */
 
+
+.eng_ver{
+  position:absolute;
+  z-index: 1111;
+   background-color: transparent;
+   margin-left: 25px;
+   margin-top: 22px;
+   /* border-color: aqua;
+   border-style: solid; */
+   height: 31px;
+   width:  34px;
+}
+
+.eng_ver img{
+height: 100%;
+width: 100%;
+}
+
+@media (max-width: 1000px) {
+  
+  .eng_ver{
+    
+    margin-left: 45%;
+    
+    
+    
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .eng_ver{
+    
+    margin-right: 0;
+    margin-left: 70px;
+    
+  }
+}
+
+
 .color_as_back{
   position:absolute;
   width: 100%;
